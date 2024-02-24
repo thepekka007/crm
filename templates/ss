@@ -636,9 +636,7 @@ a {
                 <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
                 <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
               </g>
-            </svg>
-            <!-- <h2 class="text-center mt-3" style="color:#4e484e;"   >Sales Progression</h2> -->
-            <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div>
+            </svg><h2 class="text-center mt-3" style="color:#4e484e;"   >Sales Progression</h2>
           </section></div>
     <div id='box2'><section>
             
@@ -649,9 +647,7 @@ a {
             <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
             <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
           </g>
-        </svg>
-        <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div>
-        <!-- <h2 class="text-center mt-3" style="color:#4e484e;">Sales Progression</h2> -->
+        </svg><h2 class="text-center mt-3" style="color:#4e484e;">Sales Progression</h2>
       </section></div>
     <div id='box3'><section>
             
@@ -662,8 +658,7 @@ a {
             <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
             <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
           </g>
-        </svg>
-        <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div>
+        </svg><h2 class="text-center mt-3" style="color:#4e484e;">Sales Progression</h2>
       </section></div>
 </div>
   
@@ -672,239 +667,107 @@ a {
     </div>
     <div id='table' class="container-fluid">
 
-      <div id='box' class="container mt-3">
-          <section class="mt-3">
-              <h5 class="text-center">
-                  Task Management
-              </h5>
-              <div class="container position-relative">
-                  <div class="container my-3 my-lg-5">
-                      <div class="row justify-content-center">
-                          <!-- To do tasks -->
-                          <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2 py-5" id="todo" ondrop="drop(event)"
-                              ondragover="allowDrop(event)"
-                              style="background-color: #6d72b2; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
-
-                              <h5>
-                                  TO DO
-                              </h5>
-                              <div class="d-flex flex-column align-items-center justify-content-center mt-3">
-                                  <!-- card -->
-                                  <div id="todotarget1" ondragstart="dragStart(event)" draggable="true"
-                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
-                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
-
-                                      <!-- Left side with rounded user profile -->
-                                      <div class="left-side">
-                                          <div class="user-profile"
-                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="path/to/user/profile.jpg" alt="User Profile"
-                                                  style="width: 100%; height: 100%; object-fit: cover;">
-                                          </div>
-                                      </div>
-
-                                      <!-- Right side with project details -->
-                                      <div class="right-side">
-                                          <div class="card-body px-3 py-3">
-                                              <div class="card-text mb-2">Details of Task</div>
-                                              <div
-                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
-                                                  Project Name</div>
-                                              <div>
-                                                  <!-- Email icon -->
-                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
-                                                  <!-- Half-star ratings -->
-                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- card -->
-                                  <div id="todotarget2" ondragstart="dragStart(event)" draggable="true"
-                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
-                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
-
-                                      <!-- Left side with rounded user profile -->
-                                      <div class="left-side">
-                                          <div class="user-profile"
-                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="path/to/user/profile.jpg" alt="User Profile"
-                                                  style="width: 100%; height: 100%; object-fit: cover;">
-                                          </div>
-                                      </div>
-
-                                      <!-- Right side with project details -->
-                                      <div class="right-side">
-                                          <div class="card-body px-3 py-3">
-                                              <div class="card-text mb-2">Details of Task</div>
-                                              <div
-                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
-                                                  Project Name</div>
-                                              <div>
-                                                  <!-- Email icon -->
-                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
-                                                  <!-- Half-star ratings -->
-                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <!-- card -->
-                                  <div id="todotarget3" ondragstart="dragStart(event)" draggable="true"
-                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
-                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
-
-                                      <!-- Left side with rounded user profile -->
-                                      <div class="left-side">
-                                          <div class="user-profile"
-                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="path/to/user/profile.jpg" alt="User Profile"
-                                                  style="width: 100%; height: 100%; object-fit: cover;">
-                                          </div>
-                                      </div>
-
-                                      <!-- Right side with project details -->
-                                      <div class="right-side">
-                                          <div class="card-body px-3 py-3">
-                                              <div class="card-text mb-2">Details of Task</div>
-                                              <div
-                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
-                                                  Project Name</div>
-                                              <div>
-                                                  <!-- Email icon -->
-                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
-                                                  <!-- Half-star ratings -->
-                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- To do tasks -->
-
-                          <!-- In progress tasks -->
-                          <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2 py-5" id="progress" ondrop="drop(event)"
-                              ondragover="allowDrop(event)"
-                              style="background-color: #6d72b2; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
-                              <h5>
-                                  IN PROGRESS
-                              </h5>
-                              <div class="d-flex flex-column align-items-center justify-content-center mt-3">
-                                  <!-- card -->
-                                  <div id="inprogresstarget1" ondragstart="dragStart(event)" draggable="true"
-                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
-                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
-
-                                      <!-- Left side with rounded user profile -->
-                                      <div class="left-side">
-                                          <div class="user-profile"
-                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="path/to/user/profile.jpg" alt="User Profile"
-                                                  style="width: 100%; height: 100%; object-fit: cover;">
-                                          </div>
-                                      </div>
-
-                                      <!-- Right side with project details -->
-                                      <div class="right-side">
-                                          <div class="card-body px-3 py-3">
-                                              <div class="card-text mb-2">Details of Task</div>
-                                              <div
-                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
-                                                  Project Name</div>
-                                              <div>
-                                                  <!-- Email icon -->
-                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
-                                                  <!-- Half-star ratings -->
-                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <!-- card -->
-                                  <div id="inprogresstarget2" ondragstart="dragStart(event)" draggable="true"
-                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
-                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
-
-                                      <!-- Left side with rounded user profile -->
-                                      <div class="left-side">
-                                          <div class="user-profile"
-                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="path/to/user/profile.jpg" alt="User Profile"
-                                                  style="width: 100%; height: 100%; object-fit: cover;">
-                                          </div>
-                                      </div>
-
-                                      <!-- Right side with project details -->
-                                      <div class="right-side">
-                                          <div class="card-body px-3 py-3">
-                                              <div class="card-text mb-2">Details of Task</div>
-                                              <div
-                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
-                                                  Project Name</div>
-                                              <div>
-                                                  <!-- Email icon -->
-                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
-                                                  <!-- Half-star ratings -->
-                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- In progress tasks -->
-
-                          <!-- Completed tasks -->
-                          <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2 py-5" id="completed"
-                              ondrop="drop(event)" ondragover="allowDrop(event)"
-                              style="background-color: #6d72b2; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
-                              <h5>
-                                  COMPLETED
-                              </h5>
-                              <div class="d-flex flex-column align-items-center justify-content-center mt-3">
-                                  <!-- card -->
-
-                                  <div id="completedtarget1" ondragstart="dragStart(event)" draggable="true"
-                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
-                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
-
-                                      <!-- Left side with rounded user profile -->
-                                      <div class="left-side">
-                                          <div class="user-profile"
-                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="path/to/user/profile.jpg" alt="User Profile"
-                                                  style="width: 100%; height: 100%; object-fit: cover;">
-                                          </div>
-                                      </div>
-
-                                      <!-- Right side with project details -->
-                                      <div class="right-side">
-                                          <div class="card-body px-3 py-3">
-                                              <div class="card-text mb-2">Details of Task</div>
-                                              <div
-                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
-                                                  Project Name</div>
-                                              <div>
-                                                  <!-- Email icon -->
-                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
-                                                  <!-- Half-star ratings -->
-                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- Completed tasks -->
-                      </div>
-                  </div>
-              </div>
-          </section>
-      </div>
-  </div>
+        <div id='box' class="container mt-3">
+            <section class="mt-3">
+                <h5 class="text-center">
+                    Task Management
+                </h5>
+                <div class="container position-relative">
+                    <div class="container my-3 my-lg-5">
+                        <div class="row justify-content-center" >
+                            <!-- To do tasks -->
+                            <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2  py-5" id="todo" ondrop="drop(event)"
+                                ondragover="allowDrop(event)" style="background-color: #6d72b2; border-radius: 10px;">
+                                <h5>
+                                    TO DO
+                                </h5>
+                                <div class="d-flex flex-column align-items-center justify-content-center mt-3" >
+                                    <!-- card -->
+                                    <div id="todotarget1" ondragstart="dragStart(event)" draggable="true"
+                                        class="card rounded-0 w-100 mb-3 border-0 border-start border-primary border-3 shadow-sm">
+                                        <div class="card-body px-3 py-3" style="background-color: #e1aee1; border-radius: 10px;">
+                                            <div class="card-text mb-2"><b>Project Findme</b></div>
+                                            <div class="card-text mb-2"><i>$100000</i></div>
+                                            <img class="object-cover w-20 h-20 mt-3 mr-3 rounded-full" src="https://i.ibb.co/xCvndYT/Screenshot-from-2024-01-05-12-39-14.png" style="width: 50px;border-radius: 40px;">
+                                            <div class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
+                                                olivia peterson</div>
+                                        </div>
+                                    </div>
+                                    <!-- card -->
+                                    <div id="todotarget2" ondragstart="dragStart(event)" draggable="true"
+                                        class="card rounded-0 w-100 mb-3 border-0 border-start border-primary border-3 shadow-sm">
+                                        <div class="card-body px-3 py-3">
+                                            <div class="card-text mb-2">Details of Task</div>
+                                            <div class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
+                                                Project Name</div>
+                                        </div>
+                                    </div>
+                                    <!-- card -->
+                                    <div id="todotarget3" ondragstart="dragStart(event)" draggable="true"
+                                        class="card rounded-0 w-100 mb-3 border-0 border-start border-primary border-3 shadow-sm">
+                                        <div class="card-body px-3 py-3">
+                                            <div class="card-text mb-2">Details of Task</div>
+                                            <div class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
+                                                Project Name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- To do tasks -->
+    
+                            <!-- In progress tasks -->
+                            <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2  py-2" id="progress" ondrop="drop(event)" style="background-color: #6d72b2;"
+                                ondragover="allowDrop(event)">
+                                <h5>
+                                    IN PROGRESS
+                                </h5>
+                                <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+                                    <!-- card -->
+                                    <div id="inprogresstarget1" ondragstart="dragStart(event)" draggable="true"
+                                        class="card rounded-0 w-100 mb-3 border-0 border-start border-warning border-3 shadow-sm">
+                                        <div class="card-body px-3 py-3">
+                                            <div class="card-text mb-2">Details of Task</div>
+                                            <div class="bg-warning d-inline p-1 fw-semibold small text-white project-name">
+                                                Project Name</div>
+                                        </div>
+                                    </div>
+                                    <!-- card -->
+                                    <div id="inprogresstarget2" ondragstart="dragStart(event)" draggable="true"
+                                        class="card rounded-0 w-100 mb-3 border-0 border-start border-warning border-3 shadow-sm">
+                                        <div class="card-body px-3 py-3">
+                                            <div class="card-text mb-2">Details of Task</div>
+                                            <div class="bg-warning d-inline p-1 fw-semibold small text-white project-name">
+                                                Project Name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- In progress tasks -->
+    
+                            <!-- Completed tasks -->
+                            <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2  py-2" id="completed" ondrop="drop(event)" style="background-color: #6d72b2;"
+                                ondragover="allowDrop(event)">
+                                <h5>
+                                    COMPLETED
+                                </h5>
+                                <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+                                    <!-- card -->
+                                    <div id="completedtarget1" ondragstart="dragStart(event)" draggable="true"
+                                        class="card rounded-0 w-100 mb-3 border-0 border-start border-success border-3 shadow-sm">
+                                        <div class="card-body px-3 py-3">
+                                            <div class="card-text mb-2">Details of Task</div>
+                                            <div class="bg-success d-inline p-1 fw-semibold small text-white project-name">
+                                                Project Name</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Completed tasks -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
  <div class="floating-buttons">
         <ul>
