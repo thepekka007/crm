@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    <!-- Add this to your HTML file -->
+<script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Add this script tag to include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<style>
+    .navbar-scrolled {
+        background-color: #6d72b2/* Change this to the desired background color */
+    }
+    </style>
+    
+<script>
+    $(document).ready(function(){
+        // Add a scroll event listener
+        $(window).scroll(function(){
+            // Check the scroll position
+            if($(this).scrollTop() > 50){
+                // If the scroll position is greater than 50 pixels, add a class to change the background color
+                $('.navbar').addClass('navbar-scrolled');
+            } else {
+                // Otherwise, remove the class to revert to the original background color
+                $('.navbar').removeClass('navbar-scrolled');
+            }
+        });
+    });
+    </script>
+    
+    <style>
+
+        body{
+            background-color: #6d72b2;
+        }
+    </style>
+<!-- quote  -->
+<style>
+    .quote-wrapper {
+	display: flex;
+	height: 100vh;
+	padding: 0 20px;
+}
+.blockquote {
+	position: relative;
+	font-family: 'Barlow Condensed', sans-serif;
+	max-width: 620px;
+	margin: 80px auto;
+	align-self: center;
+}
+.blockquote h1 {
+	font-family: 'Abril Fatface', cursive;
+	position: relative;
+	color: #d182d1;
+	font-size: 2.8rem;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0;
+	border: 2px solid #fff;
+	border: solid 2px;
+	border-radius: 20px;
+	padding: 25px;
+}
+.blockquote h1 span{
+	color: #d0c8c8;
+}
+.blockquote h1:after {
+	content: "";
+	position: absolute;
+	border: 2px solid #95259f;
+	border-radius: 0 50px 0 0;
+	width: 60px;
+	height: 60px;
+	bottom: -62px;
+	left: 50px;
+	border-bottom: none;
+	border-left: none;
+	z-index: 3;
+}
+.blockquote h1:before {
+	content: "";
+	position: absolute;
+	width: 80px;
+	border: 6px solid #292a2b;
+	bottom: -3px;
+	left: 50px;
+	z-index: 2;
+}
+@media all and (min-width: 600px) {
+	.blockquote h1 {
+		font-size: 3rem;
+		line-height: 1.2;
+	}
+}
+.blockquote h4 {
+	position: relative;
+	color: #e2d7d7;
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: 0;
+	padding-top: 15px;
+	z-index: 1;
+	margin-left: 150px;
+	padding-left: 12px;
+}
+
+.blockquote h4:first-letter {
+	margin-left: -12px;
+}
+html,
+body {
+  /* display: block;
+  position: fixed;
+  height: 100vh;
+  width: 100vw; */
+  background-color: #000;
+  background: linear-gradient(#1f1f21, #000);
+}
+</style>
+
+
+<!-- wave css -->
+        <style>
+            .waves > use {
+                animation: move-forever 5s -2s linear infinite; /* Increase duration to 4s */
+            }
+
+            .waves > use:nth-child(2) {
+                animation-delay: -6s; /* Adjust delay accordingly */
+                animation-duration: 10s; /* Increase duration to 10s */
+            }
+
+            .waves > use:nth-child(3) {
+                animation-delay: -8s; /* Adjust delay accordingly */
+                animation-duration: 6s; /* Increase duration to 6s */
+            }
+
+            @keyframes move-forever {
+                0% {
+                    transform: translate(-90px, 0%);
+                }
+                100% {
+                    transform: translate(85px, 0%);
+                }
+            }
+
+            svg {
+                position: top;
+                margin-left: -5px;
+                margin-top: -20px;
+                margin-right: -40px;
+                bottom: 0;
+                width: 100%;
+                height: 30vw;
+                max-height: 200px;
+                transform: scaleY(-1);
+            }
+            @media (min-width: 992px) {
+        .navbar-nav {
+            padding-left: 40%;
+        }
+    }
+        </style>
+<!-- wave css ennd -->
+
+<!-- nav bar css  -->
+        <style>
+            .navbar {
+                width: 100%;
+                font-size: 25px;
+                
+                background-color: rgba(255, 255, 255, 0.0); /* Adjust the alpha value (last parameter) for transparency */
+                }
+        </style>
+<!-- nav bar css end  -->
+
+
+<!-- button sty le strrat  -->
+        <style> 
+            .btn1 {
+   position: relative;
+   height: 80px;
+   width: 80px;
+   padding: 0;
+   border: none;
+   background-color: #c46ec4a5;
+   border-radius: 20px;
+   box-shadow: 0px 0px 20px 2px #d351d355;
+   outline: none;
+   cursor: pointer;
+
+   transition: 600ms;
+
+   .absolute-center {
+      position: absolute;
+   }
+
+   .circle-1 {
+      transform: scale(0);
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #a061a0ac;
+
+      animation: anim1 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0s infinite;
+   }
+   .circle-5 {
+      transform: scale(0);
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #a0f3a9ac;
+
+      animation: anim1 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0s infinite;
+   }
+
+   .circle-2 {
+      transform: scale(0);
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #a052a0;
+
+      animation: anim2 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0.7s infinite;
+   }
+
+   .circle-3 {
+      transform: scale(0);
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #b27bb264;
+
+      animation: anim3 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 1.4s infinite;
+   }
+}
+
+.btn7 {
+   /* position: relative;
+   height: 80px;
+   width: 80px; */
+   padding: 0;
+   border: none;
+   background-color: #c46ec4a5;
+   border-radius: 20px;
+   box-shadow: 0px 0px 20px 2px #d351d355;
+   outline: none;
+   cursor: pointer;
+
+   transition: 600ms;
+
+   .absolute-center {
+      position: absolute;
+   }
+
+   .circle-1 {
+      transform: scale(0);
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #a061a0ac;
+
+      animation: anim1 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0s infinite;
+   }
+   .circle-5 {
+      transform: scale(0);
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #a0f3a9ac;
+
+      animation: anim1 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0s infinite;
+   }
+
+   .circle-2 {
+      transform: scale(0);
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #a052a0;
+
+      animation: anim2 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0.7s infinite;
+   }
+
+   .circle-3 {
+      transform: scale(0);
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #b27bb264;
+
+      animation: anim3 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 1.4s infinite;
+   }
+}
+.btn:focus:not(:active) {
+   background-color: rgb(255, 75, 75);
+   box-shadow: 0px 0px 20px 5px rgba(85, 85, 85, 0.8);
+   animation: waveAnim 1000ms linear 0s 1, moveAnim 500ms linear 0s 1;
+}
+
+.btn:hover:not(:focus) {
+   box-shadow: 0px 0px 20px 5px rgba(85, 85, 85, 0.8);
+   transition: 600ms;
+}
+
+@keyframes anim1 {
+   0% {
+      transform: rotate(0deg) scale(0);
+   }
+   50% {
+      transform: rotate(45deg) scale(1.2);
+   }
+   100% {
+      transform: rotate(90deg) scale(0);
+   }
+}
+
+@keyframes anim2 {
+   0% {
+      transform: rotate(0deg) scale(0);
+   }
+   50% {
+      transform: rotate(45deg) scale(0.9);
+   }
+   100% {
+      transform: rotate(90deg) scale(0);
+   }
+}
+
+@keyframes anim3 {
+   0% {
+      transform: rotate(0deg) scale(0);
+   }
+   50% {
+      transform: rotate(45deg) scale(0.7);
+   }
+   100% {
+      transform: rotate(90deg) scale(0);
+   }
+}
+
+@keyframes waveAnim {
+   100% {
+      box-shadow: 0px 0px 20px 5px rgba(85, 85, 85, 0.8);
+   }
+   50% {
+      box-shadow: 0px 0px 40px 5px rgba(255, 5, 5, 0.7);
+   }
+}
+
+@keyframes moveAnim {
+   0%,
+   100% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(-10px);
+   }
+}
+
+.d-flex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+        </style>
+<!-- buttonn style end  -->
+
+<!-- start button style  -->
+<style>
+    /*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --body-color: #393937;
+  /* --accent-color: #f1aff1; */
+  --white-color: #fff;
+  --box-shadow: 0 0 5px #c8a2c8, 0 0 25px #c8a2c8, 0 0 50px #c8a2c8,
+    0 0 1px #c8a2c8;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --normal-font-size: 1rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*=============== BASE ===============*/
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-animation {
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  color: #f1aff1;
+  span {
+    position: absolute;
+    display: block;
+  }
+
+  span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-color));
+    animation: btn-anim1 1s linear infinite;
+  }
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+
+  span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--accent-color));
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+
+  span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--accent-color));
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+
+  span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--accent-color));
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+  }
+
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+  }
+}
+
+</style>
+<!-- strat btn style end  -->
+
+<!-- style box  -->
+<style>
+        #table{
+    width:100%;
+    display:table;
+    border-spacing:50px;
+    border-radius: 5px;
+    }
+            #box{
+        width:100%;
+        height:auto;
+        border-radius: 20px;
+        /* box-shadow: 10px 10px 10px #eba3eb1f; */
+
+      
+        /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+        display:table-cell;
+        background-color: #f2a3f25f;
+
+        }
+
+        @media screen and (max-width:500px)
+        {
+
+        #box
+        {
+        width:100%;
+        display:block;
+
+        }
+
+
+        }
+
+        #box1{
+        width:auto;
+        height:auto;
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-spacing:50px;
+        border-radius: 10px;
+    
+        /* box-shadow: 10px 10px    10px #580b581f; */
+
+      
+        /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+        display:table-cell;
+        background-color: #8965b800;
+
+        }
+
+        @media screen and (max-width:500px)
+        {
+
+        #box1
+        {
+        width:100%;
+        
+        display:block;
+        }
+
+
+        }
+
+        #box2{
+            width:auto;
+        height:auto;
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-spacing:50px;
+        border-radius: 10px;
+        /* box-shadow: 10px 10px    10px #580b581f; */
+
+      
+        /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+        display:table-cell;
+        background-color: #490d9700;
+
+        }
+
+        @media screen and (max-width:500px)
+        {
+
+        #box2
+        {
+        width:100%;
+        
+        display:block;
+        }
+
+
+        }
+
+        
+        #box3{
+            width:auto;
+        height:auto;
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-spacing:50px;
+        border-radius: 10px;
+        /* box-shadow: 10px 10px    10px #580b581f; */
+
+      
+        /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+        display:table-cell;
+        background-color: #490d9700;
+
+        }
+
+        @media screen and (max-width:500px)
+        {
+
+        #box3
+        {
+        width:100%;
+        
+        display:block;
+        }
+
+
+        }
+</style>
+ 
+
+<!-- style box end -->
+
+<!-- style bottomm button  -->
+<style>
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+        #todoButton{
+        display: none;
+            }
+            
+             #progressButton{
+        display: none;
+            }
+             #completedButton{
+        display: none;
+            }
+
+
+</style>
+
+
+<!-- graph button code   -->
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+/* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #42A7A1;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.statistic {
+  height: 24em;
+  
+  
+  background: #a1a3c923;
+  border-radius: 3px;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.statistic .header {
+  background: #cc7ccc;
+  height: 12%;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+  padding: 1em;
+}
+.statistic .header span {
+  color: #fff;
+}
+.statistic .header .title {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.statistic .header .date {
+  position: absolute;
+  left: 1.2em;
+  bottom: 1.3em;
+  font-size: 0.7rem;
+}
+.statistic .header .revenue {
+  position: absolute;
+  right: 1em;
+  top: 1.3em;
+  font-size: 0.78rem;
+}
+.statistic .header .amount {
+  position: absolute;
+  right: 0.8em;
+  bottom: 0.9em;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.statistic .params {
+  position: relative;
+  text-align: right;
+  height: 1.5em;
+  padding: 0.7em;
+}
+.statistic .params span {
+  font-size: 0.7rem;
+  color: #606060;
+}
+.statistic .params span::before {
+  position: absolute;
+  top: 1.8em;
+  content: "";
+  height: 0.4em;
+  width: 1.1em;
+  border-radius: 3px;
+}
+.statistic .params .red {
+  margin-right: 2em;
+}
+.statistic .params .red::before {
+  right: 11em;
+  background: #FA7373;
+}
+.statistic .params .blue::before {
+  right: 6em;
+  background: #7BA2FF;
+}
+.statistic .graph {
+  position: relative;
+  padding: 0.7em;
+  height: 3.8em;
+}
+.statistic .graph .line1, .statistic .graph .line2, .statistic .graph .line3 {
+  background: #f2f2f2;
+  height: 1px;
+}
+.statistic .graph .line2 {
+  margin: 1.85em 0;
+}
+.statistic .graph .data svg {
+  position: absolute;
+  top: 0em;
+}
+.statistic .graph .data svg polyline {
+  fill: none;
+  stroke-width: 2;
+}
+.statistic .graph .data svg .red {
+  stroke: #FA7373;
+}
+.statistic .graph .data svg .blue {
+  stroke: #7BA2FF;
+}
+.statistic .days {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 0.2em 0.7em;
+  color: #d5c8d7;
+}
+.statistic .days span {
+  font-size: 0.7rem;
+}
+</style>
+
+<!-- footer  -->
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer {
+    background-color: rgb(109, 114, 178);
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    width: 50px;
+    height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #ddd;
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    padding-left: 7px;
+}
+
+.footer-col .social-links a {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #151515;
+    background-color: #fff;
+}
+
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+<!-- wavw -->
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 
+              58-18 88-18s  
+              58 18 88 18 
+              58-18 88-18 
+              58 18 88 18
+              v44h-352z" />
+        </defs>
+        <g class="waves">
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#c8a2c8" fill-opacity=".2" />
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="#c8a2c8" fill-opacity=".5" />
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="#c8a2c8" fill-opacity=".6" />
+        </g>
+    </svg>
+<!-- wave end -->
+<!-- nav bar code -->           
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#" style="font-family: 'Abril Fatface', cursive;" >DIMENTIONS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto " > <!-- Added justify-content-center class -->
+            <li class="nav-item active mr-auto">
+                <a class="nav-link" href="#" style="font-family: 'Abril Fatface', cursive;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="font-family: 'Abril Fatface', cursive;" >CRM</a>
+            </li>
+            <li class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="font-family: 'Abril Fatface', cursive;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Overview
+                </a>
+                <div class="dropdown-menu" style="font-family: 'Abril Fatface', cursive;" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " style="font-family: 'Abril Fatface', cursive;" href="#" >Features</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+  
+  <!-- Your page content goes here -->
+  
+
+
+  <section class="header-section mt-5">
+    <div class="container d-flex justify-content-center">
+      <div class="center-div text-center">
+        <h1 class="font-weight-bold" style="color: #f2a3f2; font-size: 70px;">"Have no fear of perfection - you'll never reach it."</h1> <br>
+        <p style="color: #dcc9dc;font-size: 18px;">DIMENTIONS CRM is the true customer-centric tool for your service needs. Track leads, get accurate forecasts, and focus on what matters: closing opportunities.</p>
+        <div class="header-buttons">
+           
+          <a href="#newsletterdiv"><div class="container d-flex-center">
+            <div class="d-flex-center">
+               <button class="btn1 d-flex-center">
+                  <div class="circle-1 absolute-center"></div>
+                  <div class="circle-2 absolute-center"></div>
+                  <div class="circle-3 absolute-center"></div>
+               </button>
+            </div>
+         </div></a>
+         <br>
+         <a class="box__link button-animation" href="#">
+            Start free !
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <body>
+    <br>
+    <br>
+    <h3 class="font-weight-bold d-flex justify-content-center" style="color: #e1aee1; font-size: 30px;font-family: Comic Sans MS, Comic Sans, cursive ;">"Keep track of your business and update with the technology"</h3> <br>
+<div id='table'>
+
+    <div id='box'>  
+        <div id='box1'>  <section>
+            
+            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="circle-chart__background" stroke="#6d72b2" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <circle class="circle-chart__circle" stroke="#f2a3f2" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <g class="circle-chart__info">
+                <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+                <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+              </g>
+            </svg>
+            <!-- <h2 class="text-center mt-3" style="color:#4e484e;"   >Sales Progression</h2> -->
+            <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div>
+          </section></div>
+    <div id='box2'><section>
+            
+        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+          <circle class="circle-chart__background" stroke="#6d72b2" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+          <circle class="circle-chart__circle" stroke="#f2a3f2" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+          <g class="circle-chart__info">
+            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+            <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+          </g>
+        </svg>
+        <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div>
+        <!-- <h2 class="text-center mt-3" style="color:#4e484e;">Sales Progression</h2> -->
+      </section></div>
+    <div id='box3'><section>
+            
+        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+          <circle class="circle-chart__background" stroke="#6d72b2" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+          <circle class="circle-chart__circle" stroke="#f2a3f2" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+          <g class="circle-chart__info">
+            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+            <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+          </g>
+        </svg>
+        <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div>
+      </section></div>
+</div>
+  
+    
+    
+    </div>
+    <div class="frame">
+        <div class="center">
+              <div class="statistic mx-auto class " style="width: 70%;">
+                  <div class="header">
+                      <span class="title">WEEKLY REPORT<br></span>  <br>
+                      <!-- <span class="date">01. Feb - 07. Feb</span>   -->
+                      <!-- <span class="revenue">Revenue</span>  <br> -->
+                      <span class="amount">$ 3621.79</span>  <br>
+                  </div>
+                  <br>
+                  <div class="params">
+                      <span class="red" style="color: rgb(255, 255, 255);">Views</span>
+                      <span class="blue" style="color: rgb(255, 255, 255);">Purchases</span>
+                  </div>
+                  <div class="graph">
+                      <div class="line1"></div>
+                      <div class="line2"></div>
+                      <div class="line3"></div>
+                      <div class="red data">
+                          <svg height=80px width=245px>
+                              <polyline class="red" points="9,46 50,18 90,29 130,17 171,40 211,50 251,25,,29 130,17 171,40 211,50 251,25"></polyline>    
+                          </svg>
+                      </div>
+                      <div class="blue data">   
+                          <svg height=80px width=245px>
+                              <polyline class="blue" points="9,61 50,50 90,65 130,55 171,59 211,68 251,60"></polyline>    
+                          </svg>
+                          
+                      </div>
+                      
+                  </div>
+                  <div class="days" style="margin-top: 10%;">
+                      <span>MON</span>
+                      <span>TUE</span>
+                      <span>WED</span>
+                      <span>THU</span>
+                      <span>FRI</span>
+                      <span>SAT</span>
+                      <span>SUN</span>
+                  </div>
+              </div>
+        </div>
+      </div>
+    <div id='table' class="container-fluid">
+
+      <div id='box' class="container mt-3">
+          <section class="mt-3">
+              <h5 class="text-center">
+                  Task Management
+              </h5>
+              <div class="container position-relative">
+                  <div class="container my-3 my-lg-5">
+                      <div class="row justify-content-center">
+                          <!-- To do tasks -->
+                          <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2 py-5" id="todo" ondrop="drop(event)"
+                              ondragover="allowDrop(event)"
+                              style="background-color: #6d72b2; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
+
+                              <h5>
+                                  TO DO
+                              </h5>
+                              <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+                                  <!-- card -->
+                                  <div id="todotarget1" ondragstart="dragStart(event)" draggable="true"
+                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
+                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
+
+                                      <!-- Left side with rounded user profile -->
+                                      <div class="left-side">
+                                          <div class="user-profile"
+                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
+                                              <img src="{% static 'u1.jpg' %}" alt="User Profile"
+                                                  style="width: 100%; height: 100%; object-fit: cover;">
+                                          </div>
+                                      </div>
+
+                                      <!-- Right side with project details -->
+                                      <div class="right-side">
+                                          <div class="card-body px-3 py-3">
+                                              <div class="card-text mb-2">Details of Task</div>
+                                              <div
+                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
+                                                  Project Name</div>
+                                              <div>
+                                                  <!-- Email icon -->
+                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
+                                                  <!-- Half-star ratings -->
+                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- card -->
+                                  <div id="todotarget2" ondragstart="dragStart(event)" draggable="true"
+                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
+                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
+
+                                      <!-- Left side with rounded user profile -->
+                                      <div class="left-side">
+                                          <div class="user-profile"
+                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
+                                              <img src="{% static 'u2.jpg' %}" alt="User Profile"
+                                                  style="width: 100%; height: 100%; object-fit: cover;">
+                                          </div>
+                                      </div>
+
+                                      <!-- Right side with project details -->
+                                      <div class="right-side">
+                                          <div class="card-body px-3 py-3">
+                                              <div class="card-text mb-2">Details of Task</div>
+                                              <div
+                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
+                                                  Project Name</div>
+                                              <div>
+                                                  <!-- Email icon -->
+                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
+                                                  <!-- Half-star ratings -->
+                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <!-- card -->
+                                  <div id="todotarget3" ondragstart="dragStart(event)" draggable="true"
+                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
+                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
+
+                                      <!-- Left side with rounded user profile -->
+                                      <div class="left-side">
+                                          <div class="user-profile"
+                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
+                                              <img src="{% static 'u3.jpg' %}" alt="User Profile"
+                                                  style="width: 100%; height: 100%; object-fit: cover;">
+                                          </div>
+                                      </div>
+
+                                      <!-- Right side with project details -->
+                                      <div class="right-side">
+                                          <div class="card-body px-3 py-3">
+                                              <div class="card-text mb-2">Details of Task</div>
+                                              <div
+                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
+                                                  Project Name</div>
+                                              <div>
+                                                  <!-- Email icon -->
+                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
+                                                  <!-- Half-star ratings -->
+                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- To do tasks -->
+
+                          <!-- In progress tasks -->
+                          <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2 py-5" id="progress" ondrop="drop(event)"
+                              ondragover="allowDrop(event)"
+                              style="background-color: #6d72b2; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
+                              <h5>
+                                  ARCHIVED
+                              </h5>
+                              <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+                                  <!-- card -->
+                                  <div id="inprogresstarget1" ondragstart="dragStart(event)" draggable="true"
+                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
+                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
+
+                                      <!-- Left side with rounded user profile -->
+                                      <div class="left-side">
+                                          <div class="user-profile"
+                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
+                                              <img src="{% static 'u4.jpg' %}" alt="User Profile"
+                                                  style="width: 100%; height: 100%; object-fit: cover;">
+                                          </div>
+                                      </div>
+
+                                      <!-- Right side with project details -->
+                                      <div class="right-side">
+                                          <div class="card-body px-3 py-3">
+                                              <div class="card-text mb-2">Details of Task</div>
+                                              <div
+                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
+                                                  Project Name</div>
+                                              <div>
+                                                  <!-- Email icon -->
+                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
+                                                  <!-- Half-star ratings -->
+                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <!-- card -->
+                                  <div id="inprogresstarget2" ondragstart="dragStart(event)" draggable="true"
+                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
+                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
+
+                                      <!-- Left side with rounded user profile -->
+                                      <div class="left-side">
+                                          <div class="user-profile"
+                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
+                                              <img src="{% static 'u5.jpg' %}" alt="User Profile"
+                                                  style="width: 100%; height: 100%; object-fit: cover;">
+                                          </div>
+                                      </div>
+
+                                      <!-- Right side with project details -->
+                                      <div class="right-side">
+                                          <div class="card-body px-3 py-3">
+                                              <div class="card-text mb-2">Details of Task</div>
+                                              <div
+                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
+                                                  Project Name</div>
+                                              <div>
+                                                  <!-- Email icon -->
+                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
+                                                  <!-- Half-star ratings -->
+                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- In progress tasks -->
+
+                          <!-- Completed tasks -->
+                          <!-- <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2 py-5" id="completed"
+                              ondrop="drop(event)" ondragover="allowDrop(event)"
+                              style="background-color: #6d72b2; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
+                              <h5>
+                                  COMPLETED
+                              </h5>
+                              <div class="d-flex flex-column align-items-center justify-content-center mt-3">
+                            card -->
+
+                                  <!-- <div id="completedtarget1" ondragstart="dragStart(event)" draggable="true"
+                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
+                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;"> -->
+
+                                      <!-- Left side with rounded user profile -->
+                                      <!-- <div class="left-side">
+                                          <div class="user-profile"
+                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
+                                              <img src="{% static 'u6.jpg' %}" alt="User Profile"
+                                                  style="width: 100%; height: 100%; object-fit: cover;">
+                                          </div>
+                                      </div> -->
+
+                                      <!-- Right side with project details -->
+                                      <!-- <div class="right-side">
+                                          <div class="card-body px-3 py-3">
+                                              <div class="card-text mb-2">Details of Task</div>
+                                              <div
+                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
+                                                  Project Name</div>
+                                              <div> -->
+                                                  <!-- Email icon -->
+                                                  <!-- <span style="font-size: 16px; color: #007bff;">📧</span> -->
+                                                  <!-- Half-star ratings -->
+                                                  <!-- <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div> -->
+                          <!-- Completed tasks -->
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </div>
+  </div>
+    </div>
+
+   
+        
+ <div class="floating-buttons">
+        <ul>
+            <li style="margin-right: 150px;">
+              
+                  
+                            <button class="btn7 d-flex-center" style="position: relative;background-color: #a356ad00;width: 100px; height: 55px;" id="todoButton" ondrop="drop(event)" ondragover="allowDrop(event)">
+                              
+                                <div class="circle-1 absolute-center"></div>
+                                <div class="circle-2 absolute-center"></div>
+                                <div class="circle-5 absolute-center"></div>
+                                <span style="position: relative;top:10px; right: -70px;font-family:Comic Sans MS, Comic Sans, cursive;color: #bcf6df;"><b>UNARCHIVE</b></span>
+                             </button>
+                             
+                             
+                     
+                
+                <!-- <button >Button 1</button> -->
+            </li>
+            <li style="margin-right: 150px;">
+
+          
+                <button class="btn7 d-flex-center" style="position: relative;background-color: #a356ad00;width: 100px; height: 55px;" id="progressButton" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="circle-1 absolute-center"></div>
+                    <div class="circle-2 absolute-center"></div>
+                    <div class="circle-5 absolute-center"></div>
+                    <span style="position: relative;top:10px; right: -70px;font-family:Comic Sans MS, Comic Sans, cursive;color: #bcf6df;"><b> ARCHIVE</b></span>
+                 </button>
+                 
+                 
+         
+    
+    <!-- <button >Button 1</button> -->
+</li>
+            <!-- <li><button id="progressButton" ondrop="drop(event)" ondragover="allowDrop(event)">Button 2</button></li> -->
+            <!-- <li><button id="completedButton" ondrop="drop(event)" ondragover="allowDrop(event)">Button 3</button></li> -->
+        </ul>
+    </div>
+
+
+    <script>
+         function dragStart(event) {
+        event.dataTransfer.setData("Text", event.target.id);
+        const buttonId = event.target.id;
+
+        
+         switch (buttonId) {
+                case 'todotarget1':
+                     document.getElementById("progressButton").style.display = "block";
+                    //  document.getElementById("completedButton").style.display = "block";
+                     document.getElementById("todoButton").style.display = "none";
+                    break;
+                case 'todotarget2':
+                    document.getElementById("progressButton").style.display = "block";
+                    //  document.getElementById("completedButton").style.display = "block";
+                     document.getElementById("todoButton").style.display = "none";
+                    break;
+                case 'todotarget3':
+                    document.getElementById("progressButton").style.display = "block";
+                    //  document.getElementById("completedButton").style.display = "block";
+                     document.getElementById("todoButton").style.display = "none";
+                    break;
+                case 'inprogresstarget1':
+                    document.getElementById("todoButton").style.display = "block";
+                    //  document.getElementById("completedButton").style.display = "block";
+                     document.getElementById("progressButton").style.display = "none";
+                    break;
+                case 'inprogresstarget2':
+                    document.getElementById("todoButton").style.display = "block";
+                    //  document.getElementById("completedButton").style.display = "block";
+                     document.getElementById("progressButton").style.display = "none";
+                    break;
+                case 'completedtarget1':
+                    // document.getElementById("progressButton").style.display = "block";
+                    //  document.getElementById("todoButton").style.display = "block";
+                    //  document.getElementById("completedButton").style.display = "none";
+                    break;
+                default:
+                    // Handle any other buttons if needed
+                    break;
+            }
+
+    }
+
+    function allowDrop(event) {
+        event.preventDefault();
+    }
+
+    function drop(event) {
+        event.preventDefault();
+        const data = event.dataTransfer.getData("Text");
+
+        // Get the dragged element
+        const draggedElement = document.getElementById(data);
+
+        // Check if the drop target is a button
+        if (event.target.tagName === 'BUTTON') {
+            const buttonId = event.target.id;
+
+            // Determine the corresponding div based on the button ID
+            let destinationDivId;
+            switch (buttonId) {
+                case 'todoButton':
+                    destinationDivId = 'todo';
+                    break;
+                case 'progressButton':
+                    destinationDivId = 'progress';
+                    break;
+                // case 'completedButton':
+                //     destinationDivId = 'completed';
+                //     break;
+                default:
+                    // Handle any other buttons if needed
+                    break;
+            }
+
+            // Move the dragged element to the specified div
+            if (destinationDivId) {
+                const destinationDiv = document.getElementById(destinationDivId);
+                destinationDiv.appendChild(draggedElement);
+            }
+        }
+
+        // todo list
+        if (destinationDivId  == "todo") {
+            document.getElementById(data).classList.remove("border-warning", "border-success");
+            document.getElementById(data).classList.add("border-primary");
+            document.getElementById(data).getElementsByClassName("project-name")[0].classList.remove("bg-warning", "bg-success");
+            document.getElementById(data).getElementsByClassName("project-name")[0].classList.add("bg-primary")
+        }
+        // progress list
+        if (destinationDivId  == "progress") {
+            document.getElementById(data).classList.remove("border-primary", "border-success");
+            document.getElementById(data).classList.add("border-warning");
+            document.getElementById(data).getElementsByClassName("project-name")[0].classList.remove("bg-primary", "bg-success");
+            document.getElementById(data).getElementsByClassName("project-name")[0].classList.add("bg-warning")
+        }
+        // completed list
+        if (destinationDivId  == "completed") {
+            document.getElementById(data).classList.remove("border-warning", "border-success");
+            document.getElementById(data).classList.add("border-success");
+            document.getElementById(data).getElementsByClassName("project-name")[0].classList.remove("bg-warning", "bg-success");
+            document.getElementById(data).getElementsByClassName("project-name")[0].classList.add("bg-success")
+        }
+    }
+
+    </script>
+<div class="quote-wrapper" style="margin-top: -10%;margin-bottom: -10%;">
+	<div class="blockquote">
+		<h1>We chose Dimentions <span>current knowledge</span> is the same as the <span>target knowledge.</span></h1>
+		<h4>&mdash;Prosenjit Sikdar<br><em>By: A Designer's Guide</em></h4>
+	</div>
+</div>
+<footer class="footer">
+    <div class="container row">
+        <div class="footer-col">
+            <h4>Dimentions</h4>
+            <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">visit website</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <!-- <li><a href="#">shipping</a></li> -->
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+                <li><a href="#">Crm for **</a></li>
+                <li><a href="#">changelog</a></li>
+                <!-- <li><a href="#">github</a></li> -->
+                <!-- <li><a href="#">all version</a></li> -->
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    $(document).ready(function(){
+        // Add a scroll event listener
+        $(window).scroll(function(){
+            // Check the scroll position
+            if($(this).scrollTop() > 50){
+                // If the scroll position is greater than 50 pixels, add a class to change the background color
+                $('.navbar').addClass('navbar-scrolled');
+            } else {
+                // Otherwise, remove the class to revert to the original background color
+                $('.navbar').removeClass('navbar-scrolled');
+            }
+        });
+    });
+    </script>
+    
+</body>
+</html>

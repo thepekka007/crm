@@ -11,14 +11,126 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-   
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    <!-- Add this to your HTML file -->
+<script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Add this script tag to include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<style>
+    .navbar-scrolled {
+        background-color: #6d72b2/* Change this to the desired background color */
+    }
+    </style>
+    
+<script>
+    $(document).ready(function(){
+        // Add a scroll event listener
+        $(window).scroll(function(){
+            // Check the scroll position
+            if($(this).scrollTop() > 50){
+                // If the scroll position is greater than 50 pixels, add a class to change the background color
+                $('.navbar').addClass('navbar-scrolled');
+            } else {
+                // Otherwise, remove the class to revert to the original background color
+                $('.navbar').removeClass('navbar-scrolled');
+            }
+        });
+    });
+    </script>
+    
     <style>
 
         body{
             background-color: #6d72b2;
         }
     </style>
+<!-- quote  -->
+<style>
+    .quote-wrapper {
+	display: flex;
+	height: 100vh;
+	padding: 0 20px;
+}
+.blockquote {
+	position: relative;
+	font-family: 'Barlow Condensed', sans-serif;
+	max-width: 620px;
+	margin: 80px auto;
+	align-self: center;
+}
+.blockquote h1 {
+	font-family: 'Abril Fatface', cursive;
+	position: relative;
+	color: #d182d1;
+	font-size: 2.8rem;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0;
+	border: 2px solid #fff;
+	border: solid 2px;
+	border-radius: 20px;
+	padding: 25px;
+}
+.blockquote h1 span{
+	color: #d0c8c8;
+}
+.blockquote h1:after {
+	content: "";
+	position: absolute;
+	border: 2px solid #95259f;
+	border-radius: 0 50px 0 0;
+	width: 60px;
+	height: 60px;
+	bottom: -62px;
+	left: 50px;
+	border-bottom: none;
+	border-left: none;
+	z-index: 3;
+}
+.blockquote h1:before {
+	content: "";
+	position: absolute;
+	width: 80px;
+	border: 6px solid #292a2b;
+	bottom: -3px;
+	left: 50px;
+	z-index: 2;
+}
+@media all and (min-width: 600px) {
+	.blockquote h1 {
+		font-size: 3rem;
+		line-height: 1.2;
+	}
+}
+.blockquote h4 {
+	position: relative;
+	color: #e2d7d7;
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: 0;
+	padding-top: 15px;
+	z-index: 1;
+	margin-left: 150px;
+	padding-left: 12px;
+}
 
+.blockquote h4:first-letter {
+	margin-left: -12px;
+}
+</style>
+
+<!-- html,
+body {
+  display: block;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  background: linear-gradient(#1f1f21, #000);
+} -->
 <!-- wave css -->
         <style>
             .waves > use {
@@ -67,6 +179,7 @@
         <style>
             .navbar {
                 width: 100%;
+                font-size: 25px;
                 
                 background-color: rgba(255, 255, 255, 0.0); /* Adjust the alpha value (last parameter) for transparency */
                 }
@@ -103,6 +216,15 @@
 
       animation: anim1 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0s infinite;
    }
+   .circle-5 {
+      transform: scale(0);
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #a0f3a9ac;
+
+      animation: anim1 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0s infinite;
+   }
 
    .circle-2 {
       transform: scale(0);
@@ -125,6 +247,63 @@
    }
 }
 
+.btn7 {
+   /* position: relative;
+   height: 80px;
+   width: 80px; */
+   padding: 0;
+   border: none;
+   background-color: #c46ec4a5;
+   border-radius: 20px;
+   box-shadow: 0px 0px 20px 2px #d351d355;
+   outline: none;
+   cursor: pointer;
+
+   transition: 600ms;
+
+   .absolute-center {
+      position: absolute;
+   }
+
+   .circle-1 {
+      transform: scale(0);
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #a061a0ac;
+
+      animation: anim1 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0s infinite;
+   }
+   .circle-5 {
+      transform: scale(0);
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #a0f3a9ac;
+
+      animation: anim1 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0s infinite;
+   }
+
+   .circle-2 {
+      transform: scale(0);
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #a052a0;
+
+      animation: anim2 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0.7s infinite;
+   }
+
+   .circle-3 {
+      transform: scale(0);
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #b27bb264;
+
+      animation: anim3 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 1.4s infinite;
+   }
+}
 .btn:focus:not(:active) {
    background-color: rgb(255, 75, 75);
    box-shadow: 0px 0px 20px 5px rgba(85, 85, 85, 0.8);
@@ -520,10 +699,256 @@ a {
 </style>
 
 
-<!-- bottm button code   -->
+<!-- graph button code   -->
 
 <style>
-    
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+/* .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #42A7A1;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.statistic {
+  height: 24em;
+  
+  
+  background: #a1a3c923;
+  border-radius: 3px;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.statistic .header {
+  background: #cc7ccc;
+  height: 12%;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+  padding: 1em;
+}
+.statistic .header span {
+  color: #fff;
+}
+.statistic .header .title {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.statistic .header .date {
+  position: absolute;
+  left: 1.2em;
+  bottom: 1.3em;
+  font-size: 0.7rem;
+}
+.statistic .header .revenue {
+  position: absolute;
+  right: 1em;
+  top: 1.3em;
+  font-size: 0.78rem;
+}
+.statistic .header .amount {
+  position: absolute;
+  right: 0.8em;
+  bottom: 0.9em;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.statistic .params {
+  position: relative;
+  text-align: right;
+  height: 1.5em;
+  padding: 0.7em;
+}
+.statistic .params span {
+  font-size: 0.7rem;
+  color: #606060;
+}
+.statistic .params span::before {
+  position: absolute;
+  top: 1.8em;
+  content: "";
+  height: 0.4em;
+  width: 1.1em;
+  border-radius: 3px;
+}
+.statistic .params .red {
+  margin-right: 2em;
+}
+.statistic .params .red::before {
+  right: 11em;
+  background: #FA7373;
+}
+.statistic .params .blue::before {
+  right: 6em;
+  background: #7BA2FF;
+}
+.statistic .graph {
+  position: relative;
+  padding: 0.7em;
+  height: 3.8em;
+}
+.statistic .graph .line1, .statistic .graph .line2, .statistic .graph .line3 {
+  background: #f2f2f2;
+  height: 1px;
+}
+.statistic .graph .line2 {
+  margin: 1.85em 0;
+}
+.statistic .graph .data svg {
+  position: absolute;
+  top: 0em;
+}
+.statistic .graph .data svg polyline {
+  fill: none;
+  stroke-width: 2;
+}
+.statistic .graph .data svg .red {
+  stroke: #FA7373;
+}
+.statistic .graph .data svg .blue {
+  stroke: #7BA2FF;
+}
+.statistic .days {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 0.2em 0.7em;
+  color: #d5c8d7;
+}
+.statistic .days span {
+  font-size: 0.7rem;
+}
+</style>
+
+<!-- footer  -->
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer {
+    background-color: rgb(109, 114, 178);
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    width: 50px;
+    height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #ddd;
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+    padding-left: 7px;
+}
+
+.footer-col .social-links a {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #151515;
+    background-color: #fff;
+}
+
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
 </style>
 </head>
 <body>
@@ -547,7 +972,7 @@ a {
 <!-- nav bar code -->           
 
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <a class="navbar-brand" href="#" style="font-family:h">DIMENTIONS</a>
+    <a class="navbar-brand" href="#" style="font-family: 'Abril Fatface', cursive;" >DIMENTIONS</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -555,29 +980,29 @@ a {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto " > <!-- Added justify-content-center class -->
             <li class="nav-item active mr-auto">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#" style="font-family: 'Abril Fatface', cursive;">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" >Link</a>
+                <a class="nav-link" href="#" style="font-family: 'Abril Fatface', cursive;" >CRM</a>
             </li>
             <li class="nav-item dropdown" >
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="font-family: 'Abril Fatface', cursive;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Overview
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu" style="font-family: 'Abril Fatface', cursive;" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="{% url 'nextpage' %}">Something else here</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#" >Disabled</a>
+                <a class="nav-link " style="font-family: 'Abril Fatface', cursive;" href="#" >Features</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
 </nav>
@@ -670,6 +1095,49 @@ a {
     
     
     </div>
+    <div class="frame">
+        <div class="center">
+              <div class="statistic mx-auto class " style="width: 70%;">
+                  <div class="header">
+                      <span class="title">WEEKLY REPORT<br></span>  <br>
+                      <!-- <span class="date">01. Feb - 07. Feb</span>   -->
+                      <!-- <span class="revenue">Revenue</span>  <br> -->
+                      <span class="amount">$ 3621.79</span>  <br>
+                  </div>
+                  <br>
+                  <div class="params">
+                      <span class="red" style="color: rgb(255, 255, 255);">Views</span>
+                      <span class="blue" style="color: rgb(255, 255, 255);">Purchases</span>
+                  </div>
+                  <div class="graph">
+                      <div class="line1"></div>
+                      <div class="line2"></div>
+                      <div class="line3"></div>
+                      <div class="red data">
+                          <svg height=80px width=245px>
+                              <polyline class="red" points="9,46 50,18 90,29 130,17 171,40 211,50 251,25,,29 130,17 171,40 211,50 251,25"></polyline>    
+                          </svg>
+                      </div>
+                      <div class="blue data">   
+                          <svg height=80px width=245px>
+                              <polyline class="blue" points="9,61 50,50 90,65 130,55 171,59 211,68 251,60"></polyline>    
+                          </svg>
+                          
+                      </div>
+                      
+                  </div>
+                  <div class="days" style="margin-top: 10%;">
+                      <span>MON</span>
+                      <span>TUE</span>
+                      <span>WED</span>
+                      <span>THU</span>
+                      <span>FRI</span>
+                      <span>SAT</span>
+                      <span>SUN</span>
+                  </div>
+              </div>
+        </div>
+      </div>
     <div id='table' class="container-fluid">
 
       <div id='box' class="container mt-3">
@@ -698,7 +1166,7 @@ a {
                                       <div class="left-side">
                                           <div class="user-profile"
                                               style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="path/to/user/profile.jpg" alt="User Profile"
+                                              <img src="{% static 'u1.jpg' %}" alt="User Profile"
                                                   style="width: 100%; height: 100%; object-fit: cover;">
                                           </div>
                                       </div>
@@ -728,7 +1196,7 @@ a {
                                       <div class="left-side">
                                           <div class="user-profile"
                                               style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="path/to/user/profile.jpg" alt="User Profile"
+                                              <img src="{% static 'u2.jpg' %}" alt="User Profile"
                                                   style="width: 100%; height: 100%; object-fit: cover;">
                                           </div>
                                       </div>
@@ -759,7 +1227,7 @@ a {
                                       <div class="left-side">
                                           <div class="user-profile"
                                               style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="path/to/user/profile.jpg" alt="User Profile"
+                                              <img src="{% static 'u3.jpg' %}" alt="User Profile"
                                                   style="width: 100%; height: 100%; object-fit: cover;">
                                           </div>
                                       </div>
@@ -789,7 +1257,7 @@ a {
                               ondragover="allowDrop(event)"
                               style="background-color: #6d72b2; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
                               <h5>
-                                  IN PROGRESS
+                                  ARCHIVED
                               </h5>
                               <div class="d-flex flex-column align-items-center justify-content-center mt-3">
                                   <!-- card -->
@@ -801,7 +1269,7 @@ a {
                                       <div class="left-side">
                                           <div class="user-profile"
                                               style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="path/to/user/profile.jpg" alt="User Profile"
+                                              <img src="{% static 'u4.jpg' %}" alt="User Profile"
                                                   style="width: 100%; height: 100%; object-fit: cover;">
                                           </div>
                                       </div>
@@ -832,7 +1300,7 @@ a {
                                       <div class="left-side">
                                           <div class="user-profile"
                                               style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="path/to/user/profile.jpg" alt="User Profile"
+                                              <img src="{% static 'u5.jpg' %}" alt="User Profile"
                                                   style="width: 100%; height: 100%; object-fit: cover;">
                                           </div>
                                       </div>
@@ -858,46 +1326,46 @@ a {
                           <!-- In progress tasks -->
 
                           <!-- Completed tasks -->
-                          <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2 py-5" id="completed"
+                          <!-- <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2 py-5" id="completed"
                               ondrop="drop(event)" ondragover="allowDrop(event)"
                               style="background-color: #6d72b2; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
                               <h5>
                                   COMPLETED
                               </h5>
                               <div class="d-flex flex-column align-items-center justify-content-center mt-3">
-                                  <!-- card -->
+                            card -->
 
-                                  <div id="completedtarget1" ondragstart="dragStart(event)" draggable="true"
+                                  <!-- <div id="completedtarget1" ondragstart="dragStart(event)" draggable="true"
                                       class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
-                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
+                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;"> -->
 
                                       <!-- Left side with rounded user profile -->
-                                      <div class="left-side">
+                                      <!-- <div class="left-side">
                                           <div class="user-profile"
                                               style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="path/to/user/profile.jpg" alt="User Profile"
+                                              <img src="{% static 'u6.jpg' %}" alt="User Profile"
                                                   style="width: 100%; height: 100%; object-fit: cover;">
                                           </div>
-                                      </div>
+                                      </div> -->
 
                                       <!-- Right side with project details -->
-                                      <div class="right-side">
+                                      <!-- <div class="right-side">
                                           <div class="card-body px-3 py-3">
                                               <div class="card-text mb-2">Details of Task</div>
                                               <div
                                                   class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
                                                   Project Name</div>
-                                              <div>
+                                              <div> -->
                                                   <!-- Email icon -->
-                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
+                                                  <!-- <span style="font-size: 16px; color: #007bff;">📧</span> -->
                                                   <!-- Half-star ratings -->
-                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
+                                                  <!-- <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
                                               </div>
                                           </div>
                                       </div>
                                   </div>
                               </div>
-                          </div>
+                          </div> -->
                           <!-- Completed tasks -->
                       </div>
                   </div>
@@ -906,11 +1374,44 @@ a {
       </div>
   </div>
     </div>
+
+   
+        
  <div class="floating-buttons">
         <ul>
-            <li><button id="todoButton" ondrop="drop(event)" ondragover="allowDrop(event)">Button 1</button></li>
-            <li><button id="progressButton" ondrop="drop(event)" ondragover="allowDrop(event)">Button 2</button></li>
-            <li><button id="completedButton" ondrop="drop(event)" ondragover="allowDrop(event)">Button 3</button></li>
+            <li style="margin-right: 150px;">
+              
+                  
+                            <button class="btn7 d-flex-center" style="position: relative;background-color: #a356ad00;width: 100px; height: 55px;" id="todoButton" ondrop="drop(event)" ondragover="allowDrop(event)">
+                              
+                                <div class="circle-1 absolute-center"></div>
+                                <div class="circle-2 absolute-center"></div>
+                                <div class="circle-5 absolute-center"></div>
+                                <span style="position: relative;top:10px; right: -70px;font-family:Comic Sans MS, Comic Sans, cursive;color: #bcf6df;"><b>UNARCHIVE</b></span>
+                             </button>
+                             
+                             
+                     
+                
+                <!-- <button >Button 1</button> -->
+            </li>
+            <li style="margin-right: 150px;">
+
+          
+                <button class="btn7 d-flex-center" style="position: relative;background-color: #a356ad00;width: 100px; height: 55px;" id="progressButton" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="circle-1 absolute-center"></div>
+                    <div class="circle-2 absolute-center"></div>
+                    <div class="circle-5 absolute-center"></div>
+                    <span style="position: relative;top:10px; right: -70px;font-family:Comic Sans MS, Comic Sans, cursive;color: #bcf6df;"><b> ARCHIVE</b></span>
+                 </button>
+                 
+                 
+         
+    
+    <!-- <button >Button 1</button> -->
+</li>
+            <!-- <li><button id="progressButton" ondrop="drop(event)" ondragover="allowDrop(event)">Button 2</button></li> -->
+            <!-- <li><button id="completedButton" ondrop="drop(event)" ondragover="allowDrop(event)">Button 3</button></li> -->
         </ul>
     </div>
 
@@ -924,33 +1425,33 @@ a {
          switch (buttonId) {
                 case 'todotarget1':
                      document.getElementById("progressButton").style.display = "block";
-                     document.getElementById("completedButton").style.display = "block";
+                    //  document.getElementById("completedButton").style.display = "block";
                      document.getElementById("todoButton").style.display = "none";
                     break;
                 case 'todotarget2':
                     document.getElementById("progressButton").style.display = "block";
-                     document.getElementById("completedButton").style.display = "block";
+                    //  document.getElementById("completedButton").style.display = "block";
                      document.getElementById("todoButton").style.display = "none";
                     break;
                 case 'todotarget3':
                     document.getElementById("progressButton").style.display = "block";
-                     document.getElementById("completedButton").style.display = "block";
+                    //  document.getElementById("completedButton").style.display = "block";
                      document.getElementById("todoButton").style.display = "none";
                     break;
                 case 'inprogresstarget1':
                     document.getElementById("todoButton").style.display = "block";
-                     document.getElementById("completedButton").style.display = "block";
+                    //  document.getElementById("completedButton").style.display = "block";
                      document.getElementById("progressButton").style.display = "none";
                     break;
                 case 'inprogresstarget2':
                     document.getElementById("todoButton").style.display = "block";
-                     document.getElementById("completedButton").style.display = "block";
+                    //  document.getElementById("completedButton").style.display = "block";
                      document.getElementById("progressButton").style.display = "none";
                     break;
                 case 'completedtarget1':
-                    document.getElementById("progressButton").style.display = "block";
-                     document.getElementById("todoButton").style.display = "block";
-                     document.getElementById("completedButton").style.display = "none";
+                    // document.getElementById("progressButton").style.display = "block";
+                    //  document.getElementById("todoButton").style.display = "block";
+                    //  document.getElementById("completedButton").style.display = "none";
                     break;
                 default:
                     // Handle any other buttons if needed
@@ -983,9 +1484,9 @@ a {
                 case 'progressButton':
                     destinationDivId = 'progress';
                     break;
-                case 'completedButton':
-                    destinationDivId = 'completed';
-                    break;
+                // case 'completedButton':
+                //     destinationDivId = 'completed';
+                //     break;
                 default:
                     // Handle any other buttons if needed
                     break;
@@ -1022,5 +1523,68 @@ a {
     }
 
     </script>
+<div class="quote-wrapper" style="margin-top: -10%;margin-bottom: -10%;">
+	<div class="blockquote">
+		<h1>We chose Dimentions <span>current knowledge</span> is the same as the <span>target knowledge.</span></h1>
+		<h4>&mdash;Prosenjit Sikdar<br><em>By: A Designer's Guide</em></h4>
+	</div>
+</div>
+<footer class="footer">
+    <div class="container row">
+        <div class="footer-col">
+            <h4>Dimentions</h4>
+            <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">visit website</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <!-- <li><a href="#">shipping</a></li> -->
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+                <li><a href="#">Crm for **</a></li>
+                <li><a href="#">changelog</a></li>
+                <!-- <li><a href="#">github</a></li> -->
+                <!-- <li><a href="#">all version</a></li> -->
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    $(document).ready(function(){
+        // Add a scroll event listener
+        $(window).scroll(function(){
+            // Check the scroll position
+            if($(this).scrollTop() > 50){
+                // If the scroll position is greater than 50 pixels, add a class to change the background color
+                $('.navbar').addClass('navbar-scrolled');
+            } else {
+                // Otherwise, remove the class to revert to the original background color
+                $('.navbar').removeClass('navbar-scrolled');
+            }
+        });
+    });
+    </script>
+    
 </body>
 </html>
