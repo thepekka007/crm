@@ -1016,8 +1016,8 @@ ul {
   <section class="header-section mt-5">
     <div class="container d-flex justify-content-center">
       <div class="center-div text-center">
-        <h1 class="font-weight-bold" style="color: #f2a3f2; font-size: 70px;">"Have no fear of perfection - you'll never reach it."</h1> <br>
-        <p style="color: #dcc9dc;font-size: 18px;">DIMENTIONS CRM is the true customer-centric tool for your service needs. Track leads, get accurate forecasts, and focus on what matters: closing opportunities.</p>
+        <h1 class="font-weight-bold" style="color: #f2a3f2; font-size: 70px;">"Archived"</h1> <br>
+        <!-- <p style="color: #dcc9dc;font-size: 18px;">DIMENTIONS CRM is the true customer-centric tool for your service needs. Track leads, get accurate forecasts, and focus on what matters: closing opportunities.</p> -->
         <div class="header-buttons">
            
           <a href="#newsletterdiv"><div class="container d-flex-center">
@@ -1050,7 +1050,7 @@ ul {
     <br>
     <br>
     <h3 class="font-weight-bold d-flex justify-content-center" style="color: #e1aee1; font-size: 30px;font-family: Comic Sans MS, Comic Sans, cursive ;">"Keep track of your business and update with the technology"</h3> <br>
-<div id='table'>
+<!-- <div id='table'>
 
     <div id='box'>  
         <div id='box1'>  <section>
@@ -1064,7 +1064,7 @@ ul {
               </g>
             </svg>
             <!-- <h2 class="text-center mt-3" style="color:#4e484e;"   >Sales Progression</h2> -->
-            <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div>
+            <!-- <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div>
           </section></div>
     <div id='box2'><section>
             
@@ -1076,9 +1076,9 @@ ul {
             <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
           </g>
         </svg>
-        <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div>
+        <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div> -->
         <!-- <h2 class="text-center mt-3" style="color:#4e484e;">Sales Progression</h2> -->
-      </section></div>
+      <!-- </section></div>
     <div id='box3'><section>
             
         <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -1091,19 +1091,19 @@ ul {
         </svg>
         <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div>
       </section></div>
-</div>
+</div> -->
   
     
     
-    </div>
-    <div class="frame">
+    <!-- </div> --> 
+    <!-- <div class="frame">
         <div class="center">
               <div class="statistic mx-auto class " style="width: 70%;">
                   <div class="header">
-                      <span class="title">WEEKLY REPORT<br></span>  <br>
+                      <span class="title">WEEKLY REPORT<br></span>  <br> -->
                       <!-- <span class="date">01. Feb - 07. Feb</span>   -->
                       <!-- <span class="revenue">Revenue</span>  <br> -->
-                      <span class="amount">$ 3621.79</span>  <br>
+                      <!-- <span class="amount">$ 3621.79</span>  <br>
                   </div>
                   <br>
                   <div class="params">
@@ -1138,7 +1138,7 @@ ul {
                   </div>
               </div>
         </div>
-      </div>
+      </div> -->
     <div id='table' class="container-fluid justify-content-center" >
 
       <div id='box' class="container mt-3 justify-content-center">
@@ -1155,14 +1155,14 @@ ul {
                               style="background-color: #6d72b2; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
 
                               <h5>
-                                  UNARCHIVED
+                                 ARCHIVED
                               </h5>
                               <div class="d-flex flex-column align-items-center justify-content-center mt-3">
                                   <!-- card -->
 
 
                                   {% for i in pro %}
-                                  {% if i.status == 'UNARCHIVED'%}
+                                  {% if i.status == 'ARCHIVED'%}
                                   <div id="{{i.id}}" ondragstart="dragStart(event)" draggable="true"
                                       class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
                                       style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
@@ -1220,7 +1220,7 @@ ul {
                     <div class="circle-1 absolute-center"></div>
                     <div class="circle-2 absolute-center"></div>
                     <div class="circle-5 absolute-center"></div>
-                    <span style="position: relative;top:10px; right: -70px;font-family:Comic Sans MS, Comic Sans, cursive;color: #bcf6df;"><b> ARCHIVE</b></span>
+                    <span style="position: relative;top:10px; right: -70px;font-family:Comic Sans MS, Comic Sans, cursive;color: #bcf6df;"><b> UNARCHIVE</b></span>
                  </button>
                  
 </li>
@@ -1247,7 +1247,7 @@ ul {
         console.log('drop')
         const data = event.dataTransfer.getData("Text");
         console.log(data)
-        const url = `/updatetoarchived/${data}`;
+        const url = `/updatetounarchived/${data}`;
 
     // Option 1: Redirect to the new URL
     window.location.href = url;
