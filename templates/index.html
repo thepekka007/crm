@@ -18,12 +18,133 @@
 
     <!-- Add this script tag to include jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<!-- <drag style= -->
+    <style>
+
+        .container3{
+            display: flex;
+            flex-wrap: wrap;
+          justify-content: center;
+          margin-left: -30px;
+          margin: 11%;
+          border: 5px solid #545ab4;
+          border-radius: 5px;
+          background-color: #6a6fb0;
+          box-shadow: 10px 20px 30px 0 rgba(0, 0, 0, 0.3);
+        
+        }
+        
+        
+          .box2 {
+            /* width: %; Set the width to 24% to allow 4 boxes in a row */
+            margin: 1%; /* Add some margin between the boxes */
+            text-align: center;
+            border: 1px solid #ccc; 
+            width: auto;
+            /* Add a border for better visualization */
+            padding: 60px;
+          /* margin: 5px; */
+          
+          color: #ddd;
+          /* flex:1; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          }
+        .fa-globe{
+          font-size: 5rem;
+          padding-right: 5px;
+        }
+        .box {
+          padding: 5px;
+          margin: 5px;
+          
+          color: #ddd;
+          flex:1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+        }
+        .hero-container3{
+          height: 50vh;
+          border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: linear-gradient(rgba(256,256,256,.1),rgba(0,0,0,.3)),url('https://cdn.dribbble.com/users/343382/screenshots/1497688/3r2def.png');
+          background-size: cover;
+          
+          
+        }
+        @media only screen and (max-width: 700px) {
+          body {
+            background-color: lightblue;
+          }
+          .box {
+          flex:0;
+            }
+          .container3 {
+            flex-direction: column;
+          }
+        }
+        </style>
 <style>
     .navbar-scrolled {
         background-color: #6d72b2/* Change this to the desired background color */
     }
     </style>
+    <style>
+        .red {
+      background-color: red;
+    }.blue {
+      background-color: blue;
+    }.green {
+      background-color: green;
+    }
+    .container2{
+      display: flex;
+      justify-content: center;
+      /* border: 1px solid black; */
     
+    }
+    /* .fa-globe{
+      font-size: 5rem;
+      padding-right: 5px;
+    } */
+    .box {
+      padding: 5px;
+      margin: 5px;
+      color: #ddd;
+      flex:1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .hero-container2{
+      height: 50vh;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(rgba(256,256,256,.1),rgba(0,0,0,.3)),url('https://cdn.dribbble.com/users/343382/screenshots/1497688/3r2def.png');
+      background-size: cover;
+      
+      
+    }
+    @media only screen and (max-width: 700px) {
+      body {
+        background-color: lightblue;
+      }
+      .box {
+      flex:0;
+        }
+      .container2 {
+        flex-direction: column;
+      } 
+    }
+    </style>
 <script>
     $(document).ready(function(){
         // Add a scroll event listener
@@ -43,7 +164,9 @@
     <style>
 
         body{
-            background-color: #6d72b2;
+            /* background-color: #6d72b2; */
+            /* background: linear-gradient(#558aee, #a8d7f0fa); */
+            background: linear-gradient(to right,#e7e7e7, #fdfdff);
         }
     </style>
 <!-- quote  -->
@@ -156,7 +279,7 @@ body {
                 }
             }
 
-            svg {
+            .s {
                 position: top;
                 margin-left: -5px;
                 margin-top: -20px;
@@ -185,10 +308,341 @@ body {
                 }
         </style>
 <!-- nav bar css end  -->
+<!-- button sty le strrat  -->
+<style> 
+    .btn1 {
+position: relative;
+height: 80px;
+width: 80px;
+padding: 0;
+border: none;
+background-color: #6f3a6fa5;
+border-radius: 20px;
+box-shadow: 0px 0px 20px 2px #3d3c3d55;
+outline: none;
+cursor: pointer;
 
+transition: 600ms;
+
+.absolute-center {
+position: absolute;
+}
+
+.circle-1 {
+transform: scale(0);
+width: 50px;
+height: 50px;
+border-radius: 10px;
+background-color: #4d494dac;
+
+animation: anim1 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0s infinite;
+}
+.circle-5 {
+transform: scale(0);
+width: 50px;
+height: 50px;
+border-radius: 10px;
+background-color: #a0f3a9ac;
+
+animation: anim1 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0s infinite;
+}
+
+.circle-2 {
+transform: scale(0);
+width: 50px;
+height: 50px;
+border-radius: 10px;
+background-color: #443e44;
+
+animation: anim2 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0.7s infinite;
+}
+
+.circle-3 {
+transform: scale(0);
+width: 50px;
+height: 50px;
+border-radius: 10px;
+background-color: #7d767d64;
+
+animation: anim3 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 1.4s infinite;
+}
+}
+
+.btn7 {
+/* position: relative;
+height: 80px;
+width: 80px; */
+padding: 0;
+border: none;
+background-color: #918e91a5;
+border-radius: 20px;
+box-shadow: 0px 0px 20px 2px #302e3055;
+outline: none;
+cursor: pointer;
+
+transition: 600ms;
+
+.absolute-center {
+position: absolute;
+}
+
+.circle-1 {
+transform: scale(0);
+width: 50px;
+height: 50px;
+border-radius: 10px;
+background-color: #302930ac;
+
+animation: anim1 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0s infinite;
+}
+.circle-5 {
+transform: scale(0);
+width: 50px;
+height: 50px;
+border-radius: 10px;
+background-color: #a0f3a9ac;
+
+animation: anim1 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0s infinite;
+}
+
+.circle-2 {
+transform: scale(0);
+width: 50px;
+height: 50px;
+border-radius: 10px;
+background-color: #a052a0;
+
+animation: anim2 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 0.7s infinite;
+}
+
+.circle-3 {
+transform: scale(0);
+width: 50px;
+height: 50px;
+border-radius: 10px;
+background-color: #b27bb264;
+
+animation: anim3 2.1s cubic-bezier(0.13, 0.86, 0.86, 0.08) 1.4s infinite;
+}
+}
+.btn:focus:not(:active) {
+background-color: rgb(255, 75, 75);
+box-shadow: 0px 0px 20px 5px rgba(85, 85, 85, 0.8);
+animation: waveAnim 1000ms linear 0s 1, moveAnim 500ms linear 0s 1;
+}
+
+.btn:hover:not(:focus) {
+box-shadow: 0px 0px 20px 5px rgba(85, 85, 85, 0.8);
+transition: 600ms;
+}
+
+@keyframes anim1 {
+0% {
+transform: rotate(0deg) scale(0);
+}
+50% {
+transform: rotate(45deg) scale(1.2);
+}
+100% {
+transform: rotate(90deg) scale(0);
+}
+}
+
+@keyframes anim2 {
+0% {
+transform: rotate(0deg) scale(0);
+}
+50% {
+transform: rotate(45deg) scale(0.9);
+}
+100% {
+transform: rotate(90deg) scale(0);
+}
+}
+
+@keyframes anim3 {
+0% {
+transform: rotate(0deg) scale(0);
+}
+50% {
+transform: rotate(45deg) scale(0.7);
+}
+100% {
+transform: rotate(90deg) scale(0);
+}
+}
+
+@keyframes waveAnim {
+100% {
+box-shadow: 0px 0px 20px 5px rgba(85, 85, 85, 0.8);
+}
+50% {
+box-shadow: 0px 0px 40px 5px rgba(255, 5, 5, 0.7);
+}
+}
+
+@keyframes moveAnim {
+0%,
+100% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(-10px);
+}
+}
+
+.d-flex-center {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+</style>
+<!-- buttonn style end  -->
+<!-- start button style  -->
+<style>
+    /*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --body-color: #393937;
+  /* --accent-color: #f1aff1; */
+  --white-color: #352e2e;
+  --box-shadow: 0 0 5px #1f1e1f, 0 0 25px #1e1a1e, 0 0 50px #251d25,
+    0 0 1px #1f191f;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --normal-font-size: 1rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*=============== BASE ===============*/
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-animation {
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  color: #1f0f13;
+  span {
+    position: absolute;
+    display: block;
+  }
+
+  span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-color));
+    animation: btn-anim1 1s linear infinite;
+  }
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+
+  span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--accent-color));
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+
+  span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--accent-color));
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+
+  span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--accent-color));
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+  }
+
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+
+  &:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+  }
+}
+
+</style>
+<!-- strat btn style end  -->
 
 <!-- button sty le strrat  -->
-        <style> 
+        <!-- <style> 
             .btn1 {
    position: relative;
    height: 80px;
@@ -376,11 +830,11 @@ body {
    align-items: center;
 }
 
-        </style>
+        </style> -->
 <!-- buttonn style end  -->
 
 <!-- start button style  -->
-<style>
+<!-- <style>
     /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
@@ -518,7 +972,7 @@ a {
   }
 }
 
-</style>
+</style> -->
 <!-- strat btn style end  -->
 
 <!-- style box  -->
@@ -953,7 +1407,7 @@ ul {
 </head>
 <body>
 <!-- wavw -->
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+    <svg class="s"  viewBox="0 24 150 28" preserveAspectRatio="none">
         <defs>
           <path id="gentle-wave" d="M-160 44c30 0 
               58-18 88-18s  
@@ -963,9 +1417,9 @@ ul {
               v44h-352z" />
         </defs>
         <g class="waves">
-          <use xlink:href="#gentle-wave" x="50" y="0" fill="#c8a2c8" fill-opacity=".2" />
-          <use xlink:href="#gentle-wave" x="50" y="3" fill="#c8a2c8" fill-opacity=".5" />
-          <use xlink:href="#gentle-wave" x="50" y="6" fill="#c8a2c8" fill-opacity=".6" />
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#6db266" fill-opacity=".2" />
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="#6db266" fill-opacity=".5" />
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="#6db266" fill-opacity=".6" />
         </g>
     </svg>
 <!-- wave end -->
@@ -983,7 +1437,7 @@ ul {
                 <a class="nav-link" href="#" style="font-family: 'Abril Fatface', cursive;">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="font-family: 'Abril Fatface', cursive;" >CRM</a>
+                <a class="nav-link" href="{% url 'newdesign' %}" style="font-family: 'Abril Fatface', cursive;" >CRM</a>
             </li>
             <li class="nav-item dropdown" >
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="font-family: 'Abril Fatface', cursive;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1012,11 +1466,11 @@ ul {
   
 
 
-  <section class="header-section mt-5">
+  <section class="header-section mt-5" style="padding-top: 5%;">
     <div class="container d-flex justify-content-center">
       <div class="center-div text-center">
-        <h1 class="font-weight-bold" style="color: #f2a3f2; font-size: 70px;">"Have no fear of perfection - you'll never reach it."</h1> <br>
-        <p style="color: #dcc9dc;font-size: 18px;">DIMENTIONS CRM is the true customer-centric tool for your service needs. Track leads, get accurate forecasts, and focus on what matters: closing opportunities.</p>
+        <h1 class="font-weight-bold" style="color: rgb(109, 114, 178); font-size: 50px;  font-family: 'Caveat', cursive;">"Have no fear of perfection -<br> you'll never reach it."</h1> <br>
+        <p style="color: rgb(109, 114, 178);font-size: 18px;"><b>DIMENTIONS</b> crm is the true customer-centric tool for your service needs. Track leads, get accurate forecasts, and focus on what matters: closing opportunities.</p>
         <div class="header-buttons">
            
           <a href="#newsletterdiv"><div class="container d-flex-center">
@@ -1030,9 +1484,9 @@ ul {
          </div></a>
          <br>
          <a class="box__link button-animation" href="#">
-            Start free !
+            <b style="color: rgb(109, 114, 178);">Start free !</b>
             <span></span>
-            <span></span>
+            <span></span>   
             <span></span>
             <span></span>
           </a>
@@ -1048,53 +1502,52 @@ ul {
   <body>
     <br>
     <br>
-    <h3 class="font-weight-bold d-flex justify-content-center" style="color: #e1aee1; font-size: 30px;font-family: Comic Sans MS, Comic Sans, cursive ;">"Keep track of your business and update with the technology"</h3> <br>
-<div id='table'>
-
-    <div id='box'>  
-        <div id='box1'>  <section>
-            
-            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
-              <circle class="circle-chart__background" stroke="#6d72b2" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+    <h3 class="font-weight-bold d-flex justify-content-center" style="color: rgb(109, 114, 178); font-size: 30px;font-family: Comic Sans MS, Comic Sans, cursive ;">"Keep track of your business and update with the technology"</h3> <br>
+  
+  
+    <br><br> <br><br> <br><br>
+    <div class="container2">
+      <div class="box "> <section>
+              
+          <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle-chart__background" stroke="#ddd" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart__circle" stroke="#f2a3f2" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <g class="circle-chart__info">
+              <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+              <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+            </g>
+          </svg>
+          <!-- <h2 class="text-center mt-3" style="color:#4e484e;"   >Sales Progression</h2> -->
+          <div class="text-center mt-3" style="color:#e199d3;font-size: 20px;"><b>Sales Progression</b></div>
+        </section></div>
+      <div class="box "> <section>
+              
+          <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="circle-chart__background" stroke="#ddd" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
               <circle class="circle-chart__circle" stroke="#f2a3f2" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
               <g class="circle-chart__info">
-                <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+                <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">40%</text>
                 <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
               </g>
             </svg>
-            <!-- <h2 class="text-center mt-3" style="color:#4e484e;"   >Sales Progression</h2> -->
-            <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div>
-          </section></div>
-    <div id='box2'><section>
-            
-        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
-          <circle class="circle-chart__background" stroke="#6d72b2" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-          <circle class="circle-chart__circle" stroke="#f2a3f2" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-          <g class="circle-chart__info">
-            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
-            <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
-          </g>
-        </svg>
-        <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div>
-        <!-- <h2 class="text-center mt-3" style="color:#4e484e;">Sales Progression</h2> -->
-      </section></div>
-    <div id='box3'><section>
-            
-        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
-          <circle class="circle-chart__background" stroke="#6d72b2" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-          <circle class="circle-chart__circle" stroke="#f2a3f2" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-          <g class="circle-chart__info">
-            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
-            <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
-          </g>
-        </svg>
-        <div class="text-center mt-3" style="color:#4e484e;"><b>Sales Progression</b></div>
-      </section></div>
-</div>
-  
-    
-    
+          <!-- <h2 class="text-center mt-3" style="color:#4e484e;"   >Sales Progression</h2> -->
+          <div class="text-center mt-3" style="color:#e199d3;font-size: 20px;"><b>Sales Progression</b></div>
+        </section></div>
+      <div class="box "> <section>
+              
+          <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+              <circle class="circle-chart__background" stroke="#ddd" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <circle class="circle-chart__circle" stroke="#f2a3f2" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <g class="circle-chart__info">
+                <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">50%</text>
+                <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+              </g>
+            </svg>
+          <!-- <h2 class="text-center mt-3" style="color:#4e484e;"   >Sales Progression</h2> -->
+          <div class="text-center mt-3" style="color:#e199d3;font-size: 20px;"><b>Sales Progression</b></div>
+        </section></div>
     </div>
+    <br><br> <br><br>
     <div class="frame">
         <div class="center">
               <div class="statistic mx-auto class " style="width: 70%;">
@@ -1138,391 +1591,131 @@ ul {
               </div>
         </div>
       </div>
-    <div id='table' class="container-fluid">
+    <div id='table' class="container-fluid" >
 
-      <div id='box' class="container mt-3">
-          <section class="mt-3">
-              <h5 class="text-center">
-                  Task Management
-              </h5>
-              <div class="container position-relative">
-                  <div class="container my-3 my-lg-5">
-                      <div class="row justify-content-center">
-                          <!-- To do tasks -->
-                          <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2 py-5" id="todo" ondrop="drop(event)"
-                              ondragover="allowDrop(event)"
-                              style="background-color: #6d72b2; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
-
-                              <h5>
-                                  TO DO
-                              </h5>
-                              <div class="d-flex flex-column align-items-center justify-content-center mt-3">
-                                  <!-- card -->
-                                  <div id="todotarget1" ondragstart="dragStart(event)" draggable="true"
-                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
-                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
-
-                                      <!-- Left side with rounded user profile -->
-                                      <div class="left-side">
-                                          <div class="user-profile"
-                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="{% static 'u1.jpg' %}" alt="User Profile"
-                                                  style="width: 100%; height: 100%; object-fit: cover;">
-                                          </div>
-                                      </div>
-
-                                      <!-- Right side with project details -->
-                                      <div class="right-side">
-                                          <div class="card-body px-3 py-3">
-                                              <div class="card-text mb-2">Details of Task</div>
-                                              <div
-                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
-                                                  Project Name</div>
-                                              <div>
-                                                  <!-- Email icon -->
-                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
-                                                  <!-- Half-star ratings -->
-                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- card -->
-                                  <div id="todotarget2" ondragstart="dragStart(event)" draggable="true"
-                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
-                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
-
-                                      <!-- Left side with rounded user profile -->
-                                      <div class="left-side">
-                                          <div class="user-profile"
-                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="{% static 'u2.jpg' %}" alt="User Profile"
-                                                  style="width: 100%; height: 100%; object-fit: cover;">
-                                          </div>
-                                      </div>
-
-                                      <!-- Right side with project details -->
-                                      <div class="right-side">
-                                          <div class="card-body px-3 py-3">
-                                              <div class="card-text mb-2">Details of Task</div>
-                                              <div
-                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
-                                                  Project Name</div>
-                                              <div>
-                                                  <!-- Email icon -->
-                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
-                                                  <!-- Half-star ratings -->
-                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <!-- card -->
-                                  <div id="todotarget3" ondragstart="dragStart(event)" draggable="true"
-                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
-                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
-
-                                      <!-- Left side with rounded user profile -->
-                                      <div class="left-side">
-                                          <div class="user-profile"
-                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="{% static 'u3.jpg' %}" alt="User Profile"
-                                                  style="width: 100%; height: 100%; object-fit: cover;">
-                                          </div>
-                                      </div>
-
-                                      <!-- Right side with project details -->
-                                      <div class="right-side">
-                                          <div class="card-body px-3 py-3">
-                                              <div class="card-text mb-2">Details of Task</div>
-                                              <div
-                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
-                                                  Project Name</div>
-                                              <div>
-                                                  <!-- Email icon -->
-                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
-                                                  <!-- Half-star ratings -->
-                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- To do tasks -->
-
-                          <!-- In progress tasks -->
-                          <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2 py-5" id="progress" ondrop="drop(event)"
-                              ondragover="allowDrop(event)"
-                              style="background-color: #6d72b2; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
-                              <h5>
-                                  ARCHIVED
-                              </h5>
-                              <div class="d-flex flex-column align-items-center justify-content-center mt-3">
-                                  <!-- card -->
-                                  <div id="inprogresstarget1" ondragstart="dragStart(event)" draggable="true"
-                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
-                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
-
-                                      <!-- Left side with rounded user profile -->
-                                      <div class="left-side">
-                                          <div class="user-profile"
-                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="{% static 'u4.jpg' %}" alt="User Profile"
-                                                  style="width: 100%; height: 100%; object-fit: cover;">
-                                          </div>
-                                      </div>
-
-                                      <!-- Right side with project details -->
-                                      <div class="right-side">
-                                          <div class="card-body px-3 py-3">
-                                              <div class="card-text mb-2">Details of Task</div>
-                                              <div
-                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
-                                                  Project Name</div>
-                                              <div>
-                                                  <!-- Email icon -->
-                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
-                                                  <!-- Half-star ratings -->
-                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <!-- card -->
-                                  <div id="inprogresstarget2" ondragstart="dragStart(event)" draggable="true"
-                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
-                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;">
-
-                                      <!-- Left side with rounded user profile -->
-                                      <div class="left-side">
-                                          <div class="user-profile"
-                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="{% static 'u5.jpg' %}" alt="User Profile"
-                                                  style="width: 100%; height: 100%; object-fit: cover;">
-                                          </div>
-                                      </div>
-
-                                      <!-- Right side with project details -->
-                                      <div class="right-side">
-                                          <div class="card-body px-3 py-3">
-                                              <div class="card-text mb-2">Details of Task</div>
-                                              <div
-                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
-                                                  Project Name</div>
-                                              <div>
-                                                  <!-- Email icon -->
-                                                  <span style="font-size: 16px; color: #007bff;">📧</span>
-                                                  <!-- Half-star ratings -->
-                                                  <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- In progress tasks -->
-
-                          <!-- Completed tasks -->
-                          <!-- <div class="col-md-6 col-lg-4 col-xl-3 shadow-sm mx-2 py-5" id="completed"
-                              ondrop="drop(event)" ondragover="allowDrop(event)"
-                              style="background-color: #6d72b2; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
-                              <h5>
-                                  COMPLETED
-                              </h5>
-                              <div class="d-flex flex-column align-items-center justify-content-center mt-3">
-                            card -->
-
-                                  <!-- <div id="completedtarget1" ondragstart="dragStart(event)" draggable="true"
-                                      class="card rounded-6 w-100 mb-3 border-3 shadow-sm"
-                                      style="background-color: #ffffff9d; display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding: 10px;"> -->
-
-                                      <!-- Left side with rounded user profile -->
-                                      <!-- <div class="left-side">
-                                          <div class="user-profile"
-                                              style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
-                                              <img src="{% static 'u6.jpg' %}" alt="User Profile"
-                                                  style="width: 100%; height: 100%; object-fit: cover;">
-                                          </div>
-                                      </div> -->
-
-                                      <!-- Right side with project details -->
-                                      <!-- <div class="right-side">
-                                          <div class="card-body px-3 py-3">
-                                              <div class="card-text mb-2">Details of Task</div>
-                                              <div
-                                                  class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
-                                                  Project Name</div>
-                                              <div> -->
-                                                  <!-- Email icon -->
-                                                  <!-- <span style="font-size: 16px; color: #007bff;">📧</span> -->
-                                                  <!-- Half-star ratings -->
-                                                  <!-- <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div> -->
-                          <!-- Completed tasks -->
-                      </div>
-                  </div>
-              </div>
-          </section>
-      </div>
+        <div class="container3" > {% for i in pro %}
+            {% if i.status == 'UNARCHIVED'%}
+            <div class="box2 " id="{{i.id}}" ondragstart="dragStart(event)" draggable="true"  style="margin-top: 40px; margin-bottom: 40px;background-color: #c7c2c29f;height: 40PX;color: #423f40;"> 
+                
+                <div class="left-side">
+                    <div class="user-profile"
+                        style="width: 40px; height: 40px; overflow: hidden; border-radius: 50%;">
+                        <img src="{% static 'u1.jpg' %}" alt="User Profile"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="card-body px-3 py-3">
+                        <div class="card-text mb-2">{{i.first_name}}&nbsp;{{i.last_name}}</div>
+                        <div class="card-text mb-2">${{i.amount}}</div>
+                        <div
+                            class="bg-primary d-inline p-1 fw-semibold small text-white project-name">
+                            {{i.project_name}}</div>
+                        <div>
+                            <!-- Email icon -->
+                            <span style="font-size: 16px; color: #007bff;">📧</span>
+                            <!-- Half-star ratings -->
+                            <span style="font-size: 16px; color: #f39c12;">★☆☆☆☆</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+            
+        </div>
   </div>
     </div>
 
-   
-        
- <div class="floating-buttons">
+    <div class="floating-buttons">
         <ul>
+    
             <li style="margin-right: 150px;">
-              
-                  
-                            <button class="btn7 d-flex-center" style="position: relative;background-color: #a356ad00;width: 100px; height: 55px;" id="todoButton" ondrop="drop(event)" ondragover="allowDrop(event)">
-                              
-                                <div class="circle-1 absolute-center"></div>
-                                <div class="circle-2 absolute-center"></div>
-                                <div class="circle-5 absolute-center"></div>
-                                <span style="position: relative;top:10px; right: -70px;font-family:Comic Sans MS, Comic Sans, cursive;color: #bcf6df;"><b>UNARCHIVE</b></span>
-                             </button>
-                             
-                             
-                     
-                
-                <!-- <button >Button 1</button> -->
-            </li>
-            <li style="margin-right: 150px;">
-
+    
           
-                <button class="btn7 d-flex-center" style="position: relative;background-color: #a356ad00;width: 100px; height: 55px;" id="progressButton" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <button class="btn7 d-flex-center" style="position: relative;background-color: #a115d000;width: 50px; height: 55px;display: none;" id="archive" ondrop="drop(event)" ondragover="allowDrop(event)">
                     <div class="circle-1 absolute-center"></div>
                     <div class="circle-2 absolute-center"></div>
                     <div class="circle-5 absolute-center"></div>
                     <span style="position: relative;top:10px; right: -70px;font-family:Comic Sans MS, Comic Sans, cursive;color: #bcf6df;"><b> ARCHIVE</b></span>
                  </button>
                  
-                 
-         
-    
-    <!-- <button >Button 1</button> -->
-</li>
-            <!-- <li><button id="progressButton" ondrop="drop(event)" ondragover="allowDrop(event)">Button 2</button></li> -->
-            <!-- <li><button id="completedButton" ondrop="drop(event)" ondragover="allowDrop(event)">Button 3</button></li> -->
+    </li>
+       
         </ul>
     </div>
-
-
+    
+    
     <script>
          function dragStart(event) {
         event.dataTransfer.setData("Text", event.target.id);
         const buttonId = event.target.id;
-
-        
-         switch (buttonId) {
-                case 'todotarget1':
-                     document.getElementById("progressButton").style.display = "block";
-                    //  document.getElementById("completedButton").style.display = "block";
-                     document.getElementById("todoButton").style.display = "none";
-                    break;
-                case 'todotarget2':
-                    document.getElementById("progressButton").style.display = "block";
-                    //  document.getElementById("completedButton").style.display = "block";
-                     document.getElementById("todoButton").style.display = "none";
-                    break;
-                case 'todotarget3':
-                    document.getElementById("progressButton").style.display = "block";
-                    //  document.getElementById("completedButton").style.display = "block";
-                     document.getElementById("todoButton").style.display = "none";
-                    break;
-                case 'inprogresstarget1':
-                    document.getElementById("todoButton").style.display = "block";
-                    //  document.getElementById("completedButton").style.display = "block";
-                     document.getElementById("progressButton").style.display = "none";
-                    break;
-                case 'inprogresstarget2':
-                    document.getElementById("todoButton").style.display = "block";
-                    //  document.getElementById("completedButton").style.display = "block";
-                     document.getElementById("progressButton").style.display = "none";
-                    break;
-                case 'completedtarget1':
-                    // document.getElementById("progressButton").style.display = "block";
-                    //  document.getElementById("todoButton").style.display = "block";
-                    //  document.getElementById("completedButton").style.display = "none";
-                    break;
-                default:
-                    // Handle any other buttons if needed
-                    break;
-            }
-
+    
+        document.getElementById("archive").style.display = "block";
+     
     }
-
+    
     function allowDrop(event) {
         event.preventDefault();
     }
-
+    
     function drop(event) {
         event.preventDefault();
+        console.log('drop')
         const data = event.dataTransfer.getData("Text");
-
+        console.log(data)
+        const url = `/updatetoarchived/${data}`;
+    
+    // Option 1: Redirect to the new URL
+    window.location.href = url;
+    
+    
+    console.log('fin')
         // Get the dragged element
-        const draggedElement = document.getElementById(data);
-
-        // Check if the drop target is a button
-        if (event.target.tagName === 'BUTTON') {
-            const buttonId = event.target.id;
-
-            // Determine the corresponding div based on the button ID
-            let destinationDivId;
-            switch (buttonId) {
-                case 'todoButton':
-                    destinationDivId = 'todo';
-                    break;
-                case 'progressButton':
-                    destinationDivId = 'progress';
-                    break;
-                // case 'completedButton':
-                //     destinationDivId = 'completed';
-                //     break;
-                default:
-                    // Handle any other buttons if needed
-                    break;
-            }
-
-            // Move the dragged element to the specified div
-            if (destinationDivId) {
-                const destinationDiv = document.getElementById(destinationDivId);
-                destinationDiv.appendChild(draggedElement);
-            }
-        }
-
-        // todo list
-        if (destinationDivId  == "todo") {
-            document.getElementById(data).classList.remove("border-warning", "border-success");
-            document.getElementById(data).classList.add("border-primary");
-            document.getElementById(data).getElementsByClassName("project-name")[0].classList.remove("bg-warning", "bg-success");
-            document.getElementById(data).getElementsByClassName("project-name")[0].classList.add("bg-primary")
-        }
-        // progress list
-        if (destinationDivId  == "progress") {
-            document.getElementById(data).classList.remove("border-primary", "border-success");
-            document.getElementById(data).classList.add("border-warning");
-            document.getElementById(data).getElementsByClassName("project-name")[0].classList.remove("bg-primary", "bg-success");
-            document.getElementById(data).getElementsByClassName("project-name")[0].classList.add("bg-warning")
-        }
-        // completed list
-        if (destinationDivId  == "completed") {
-            document.getElementById(data).classList.remove("border-warning", "border-success");
-            document.getElementById(data).classList.add("border-success");
-            document.getElementById(data).getElementsByClassName("project-name")[0].classList.remove("bg-warning", "bg-success");
-            document.getElementById(data).getElementsByClassName("project-name")[0].classList.add("bg-success")
-        }
+        // const draggedElement = document.getElementById(data);
+        // console.log(draggedElement)
+    
+        // // Check if the drop target is a button
+        // if (event.target.tagName === 'BUTTON') {
+        //     const buttonId = event.target.id;
+    
+        //     // Determine the corresponding div based on the button ID
+        //     let destinationDivId;
+        //     switch (buttonId) {
+        //         case 'archive':
+        //             destinationDivId = 'toarchive';
+        //             break;
+        //         case 'progressButton':
+        //             destinationDivId = 'progress';
+        //             break;
+        //         // case 'completedButton':
+        //         //     destinationDivId = 'completed';
+        //         //     break;
+        //         default:
+        //             // Handle any other buttons if needed
+        //             break;
+        //     }
+    
+        //     // Move the dragged element to the specified div
+        //     if (destinationDivId) {
+        //         const destinationDiv = document.getElementById(destinationDivId);
+        //         destinationDiv.appendChild(draggedElement);
+        //     }
+        // }
+    
+        // // todo list
+        // if (destinationDivId  == "toarchive") {
+        //     document.getElementById(data).classList.remove("border-warning", "border-success");
+        //     document.getElementById(data).classList.add("border-primary");
+        //     document.getElementById(data).getElementsByClassName("project-name")[0].classList.remove("bg-warning", "bg-success");
+        //     document.getElementById(data).getElementsByClassName("project-name")[0].classList.add("bg-primary")
+        // }
+       
     }
-
+    
     </script>
+      
+      
 <div class="quote-wrapper" style="margin-top: -10%;margin-bottom: -10%;">
 	<div class="blockquote">
 		<h1>We chose Dimentions <span>current knowledge</span> is the same as the <span>target knowledge.</span></h1>

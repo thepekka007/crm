@@ -13,5 +13,8 @@ urlpatterns = [
     path('updatetoarchived/<str:data>/',views.updatetoarchived,name='updatetoarchived'),
     path('updatetounarchived/<str:data>/',views.updatetounarchived,name='updatetounarchived'),
 
+
+    path('newdesign',views.newdesign,name='newdesign'),
+
     
 ]

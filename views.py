@@ -8,6 +8,8 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
+    pro = Projects.objects.all()
+    return render(request,'index.html',{'pro':pro})
     return render(request,'index.html')
 
 def nextpage(request):
@@ -73,3 +75,9 @@ def updatetounarchived(request,data):
    
    
         return redirect('nextpage')
+
+
+def newdesign(request):
+    pro = Projects.objects.all()
+    return render(request,'index4.html',{'pro':pro})
+    return render(request,'index4.html')

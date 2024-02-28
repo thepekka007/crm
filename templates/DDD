@@ -120,18 +120,17 @@
 .blockquote h4:first-letter {
 	margin-left: -12px;
 }
-html,
-body {
-  /* display: block;
-  position: fixed;
-  height: 100vh;
-  width: 100vw; */
-  background-color: #907f7f;
-  background: linear-gradient(#29505050, #1c1717);
-}
 </style>
 
-
+<!-- html,
+body {
+  display: block;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  background: linear-gradient(#1f1f21, #000);
+} -->
 <!-- wave css -->
         <style>
             .waves > use {
@@ -984,7 +983,7 @@ ul {
                 <a class="nav-link" href="#" style="font-family: 'Abril Fatface', cursive;">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" style="font-family: 'Abril Fatface', cursive;" >CRM</a>
+                <a class="nav-link" href="{% url 'newdesign' %}" style="font-family: 'Abril Fatface', cursive;" >CRM</a>
             </li>
             <li class="nav-item dropdown" >
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="font-family: 'Abril Fatface', cursive;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -992,9 +991,9 @@ ul {
                 </a>
                 <div class="dropdown-menu" style="font-family: 'Abril Fatface', cursive;" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="{% url 'nextpage2' %}">Another action</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="{% url 'nextpage' %}">Something else here</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -1016,7 +1015,7 @@ ul {
   <section class="header-section mt-5">
     <div class="container d-flex justify-content-center">
       <div class="center-div text-center">
-        <h1 class="font-weight-bold" style="color: #f881f8; font-size: 70px;">"Have no fear of perfection - you'll never reach it."</h1> <br>
+        <h1 class="font-weight-bold" style="color: #f2a3f2; font-size: 70px;">"Have no fear of perfection - you'll never reach it."</h1> <br>
         <p style="color: #dcc9dc;font-size: 18px;">DIMENTIONS CRM is the true customer-centric tool for your service needs. Track leads, get accurate forecasts, and focus on what matters: closing opportunities.</p>
         <div class="header-buttons">
            
@@ -1049,8 +1048,10 @@ ul {
   <body>
     <br>
     <br>
-    <h3 class="font-weight-bold d-flex justify-content-center" style="color: #e1aee1; font-size: 30px;font-family: Comic Sans MS, Comic Sans, cursive ;">"Keep track of your business and update with the technology"</h3> <br>
-<div id='table'>
+    <h3 class="font-weight-bold d-flex justify-content-center" style="color: #e382dbaf; font-size: 30px;font-family: Comic Sans MS, Comic Sans, cursive ;">"Keep track of your business and update with the technology"</h3> <br>
+  
+  
+    <div id='table'>
 
     <div id='box'>  
         <div id='box1'>  <section>
