@@ -1,0 +1,343 @@
+<div class="container p-t-xl">
+
+<h1 class="keyword text-center " style="padding-bottom:0px">All-in-One CRM Software</h1>
+<p class="text-center light-text">Supercharge your sales, marketing, and service​</p>
+<div>
+
+  <!-- Nav tabs -->
+     <ul class="nav nav-tabs1 m-t-xxxl" role="tablist">
+    <li role="presentation" class="active" style=" display: inline-block !important;"><a href="#sales" aria-controls="sales" role="tab" data-toggle="tab" style=" display: inline-block !important;" aria-expanded="true">Sales
+    </a></li>
+    <li role="presentation" style=" display: inline-block !important;" class=""><a href="#marketing" aria-controls="marketing" role="tab" data-toggle="tab" style=" display: inline-block !important;" aria-expanded="false">Marketing
+    </a></li>
+    <li role="presentation" style=" display: inline-block !important;" class=""><a href="#service" aria-controls="service" role="tab" data-toggle="tab" style=" display: inline-block !important;" aria-expanded="false">Service
+    </a></li>
+
+    <li role="presentation" style=" display: inline-block !important;" class=""><a href="#integ" aria-controls="integ" role="tab" data-toggle="tab" style=" display: inline-block !important;" aria-expanded="false">Integrations
+    </a></li>
+    </ul>
+
+  <!-- Tab panes -->
+<div class="tab-content">
+<div class="tab-pane active" id="sales">
+<div class="row m-b-xxl">
+
+<div class="col-lg-12 feapad1 ">
+<a href="/contact-management-software">
+<div class="col-lg-4 col-sm-6 iconFeature wow animate fadeIn feapad" style="visibility: visible; animation-name: fadeIn;">
+<div class="text-center m-b m-t">
+<img class="contact-management" alt="contact management" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Contact Management</h5>
+<p class="text-light text-center">Close more deals with single-page contact management</p>
+</div></a>
+
+
+
+ <a href="/deals">
+  <div class="col-lg-4 col-sm-6 iconFeature wow animate fadeIn feapad" style="visibility: visible; animation-name: fadeIn;">
+  <div class="text-center m-b m-t">
+  <img class="deals" alt="deals" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+  </div>
+  <h5 class="text-center">Deals</h5>
+    <p class="text-light text-center">Track stages and milestones of your deals to keep the sales process on track</p>
+  </div></a>
+
+<a href="/crm-telephony">
+<div class="col-lg-4 col-sm-6 iconFeature wow animate fadeIn feapad" style="visibility: visible; animation-name: fadeIn;">
+<div class="text-center m-b m-t">
+<img class="telephony" alt="crm telephony" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Telephony</h5>
+<p class="text-light text-center">Enjoy one-click calling, call scripts and voicemail automation</p>
+</div></a>
+
+
+<a href="/appointment-scheduling-software">
+<div class="col-lg-4 col-sm-6 iconFeature wow animate fadeIn feapad" style="visibility: visible; animation-name: fadeIn;">
+<div class="text-center m-b m-t">
+<img class="appointment" alt="Appointment Scheduling software" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Appointment Scheduling</h5>
+<p class="text-light text-center">Share your calendar online and automate scheduling, invites, and follow ups</p>
+</div></a>
+
+<a href="/project-management">
+<div class="col-lg-4 col-sm-6 iconFeature wow animate fadeIn feapad" style="visibility: visible; animation-name: fadeIn;">
+<div class="text-center m-b m-t">
+<img class="project-management" alt="project management" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Project Management</h5>
+<p class="text-light text-center">Manage your projects effectively with drag-and-drop task lists and more</p>
+</div></a>
+
+
+
+
+<a href="/gamification">
+<div class="col-lg-4 col-sm-6 iconFeature wow animate fadeIn feapad" style="visibility: visible; animation-name: fadeIn;">
+<div class="text-center m-b m-t">
+<img class="gamification" alt="Gamification" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Gamification</h5>
+<p class="text-light text-center">Gamify sales with ramped up competition and collaboration to get better results</p>
+</div></a>
+
+</div>
+
+
+</div>
+
+
+<div class="text-center text-light m-t-xl "><a href="/sales"><span class="border-b-pink-light features-mob-fix p-b-xs">Explore sales features</span></a></div>
+
+</div>
+
+
+<div class="tab-pane animated pulse" id="marketing">
+<div class="row m-b-xxl  ">
+
+<div class="col-lg-12 feapad1 ">
+
+<a href="/marketing-automation-software">
+<div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+<div class="text-center m-b m-t">
+<img class="marketing-automation" alt="marketing automation" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Marketing Automation</h5>
+<p class="text-light text-center" style="padding: 0px 20px;">Marketing workflows with an easy drag-and-drop designer</p>
+</div></a>
+
+
+<a href="/landing-page">
+<div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+<div class="text-center m-b m-t">
+<img class="landing-page" alt="landingpage" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Landing Page Builder</h5>
+<p class="text-light text-center">Use our templates to create high converting, mobile responsive landing pages</p>
+</div></a>
+
+
+
+<a href="/social-crm">
+<div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+<div class="text-center m-b m-t">
+<img class="social-suite" alt="socialsuite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Social Suite</h5>
+<p class="text-light text-center">Integrate social media easily into your marketing campaigns &amp; contact views</p>
+</div></a>
+
+
+
+
+
+
+                      <a href="/email-marketing">
+                     <div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+                    <div class="text-center m-b m-t">
+                        <img class="email-campaigns" alt="email campaigns" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+                    </div>
+                    <h5 class="text-center">Email Marketing</h5>
+                    <p class="text-light text-center">Get complete email marketing features with newsletters, analytics, and more</p>
+                    </div></a>
+
+
+                    <a href="/mobile-marketing">
+                    <div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+                    <div class="text-center m-b m-t">
+                    <img class="mobile-marketing" alt="mobile marketing" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+                    </div>
+                    <h5 class="text-center">Mobile Marketing</h5>
+                    <p class="text-light text-center">Send out personalized SMS and include mobile messaging in your campaigns</p>
+                    </div></a>
+
+
+
+				<a href="/email-tracking">
+                <div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+                <div class="text-center m-b m-t">
+                <img class="email-tracking" alt="email tracking" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+                </div>
+                <h5 class="text-center">Email Tracking</h5>
+                <p class="text-light text-center">Track your email performance with metrics that matter and notifications</p>
+                </div></a>
+
+</div>
+
+
+</div>
+
+
+<div class="text-center text-light m-t-xl"><a href="/marketing"><span class="border-b-red p-b-xs">Explore marketing features</span></a></div>
+
+</div>
+
+<div class="tab-pane animated pulse" id="service">
+
+<div class="row">
+
+<div class="col-lg-12 feapad1 ">
+
+<a href="/helpdesk">
+<div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+<div class="text-center m-b m-t">
+<img class="helpdesk" alt="Helpdesk" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Helpdesk</h5>
+<p class="text-light text-center" style="padding: 0px 20px;">Enable your business to provide customer experience that’s more personalized</p>
+</div></a>
+
+<a href="/ticket-feedback">
+<div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+<div class="text-center m-b m-t">
+<img class="feedback" alt="feedback" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Feedback</h5>
+<p class="text-light text-center" style="padding: 0px 20px;">Improve customer relations by querying and analyzing their feedback</p>
+</div></a>
+
+ <a href="https://our.agilecrm.com/help" rel="noreferrer" target="_blank">
+<div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+<div class="text-center m-b m-t">
+<img class="knowledge-base" alt="knowledge base" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Knowledge Base</h5>
+<p class="text-light text-center" style="padding: 0px 20px;">Enabling a self-service portal to help customers help themselves</p>
+</div>
+</a>
+
+
+            <div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+                    <div class="text-center m-b m-t">
+                        <img class="smart-views" alt="smart views" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+                    </div>
+                    <h5 class="text-center">Smart Views</h5>
+                    <p class="text-light text-center">Assign conditions to prioritize tickets and view them on the dashboard</p>
+                </div>
+
+
+
+
+
+
+                 <div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+                      <div class="text-center m-b m-t">
+                        <img class="ticketing" alt="ticketing" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+                    </div>
+                    <h5 class="text-center">Ticketing</h5>
+                    <p class="text-light text-center">Powerful ticketing feature to resolve customer queries quickly</p>
+                </div>
+
+
+
+
+
+        
+
+
+       <div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+                    <div class="text-center m-b m-t">
+                        <img class="canned-responses" alt="canned responses" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+                    </div>
+                    <h5 class="text-center">Canned Responses</h5>
+                    <p class="text-light text-center">Pre-formatted replies to ensure fast and consistent responses to common questions. </p>
+                </div>
+
+
+</div></div>
+
+
+
+<div class="text-center text-light m-t-xl"><a href="/helpdesk"><span class="border-b-red p-b-xs">Explore service features</span></a></div>
+
+</div>
+
+<div class="tab-pane" id="integ">
+
+<div class="row m-b-xxl">
+
+
+ <div class="col-lg-12 feapad1 ">
+<a href="/twitter-integration">
+<div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+<div class="text-center m-b m-t">
+<img class="twitter" alt="twitter" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Twitter</h5>
+<p class="text-light text-center" style="padding: 0px 20px;">Connect with your contacts, schedule tweets and automate social interactions.
+
+</p>
+</div></a>
+<a href="/facebook-integration">
+<div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+<div class="text-center m-b m-t">
+<img class="fb" alt="facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Facebook</h5>
+<p class="text-light text-center" style="padding: 0px 20px;">Engage with your contacts on Facebook and post to their walls from Agile.
+
+</p>
+</div></a>
+
+<a href="/google-apps">
+<div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+<div class="text-center m-b m-t">
+<img class="ga" alt="Google apps" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Google Apps</h5>
+<p class="text-light text-center" style="padding: 0px 20px;">Agile integrates with your favorite Google Apps for complete sales enablement.</p>
+</div>
+
+</a>
+
+
+<a href="/twilio">
+<div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+<div class="text-center m-b m-t">
+<img class="twilio" alt="twilio" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">Twilio</h5>
+<p class="text-light text-center" style="padding: 0px 20px;">Make and receive calls, record calls, track conversations and more.</p>
+</div></a>
+
+<a href="/ringcentral-integration">
+<div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+<div class="text-center m-b m-t">
+<img class="rc" alt="ringcentral-integration" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">RingCentral</h5>
+<p class="text-light text-center" style="padding: 0px 20px;">Turn your calls into deals with the best integration in the industry.</p>
+</div></a>
+
+
+<a href="/linkedin-integration">
+<div class="col-lg-4 col-sm-6 iconFeature  feapad ">
+<div class="text-center m-b m-t">
+<img class="wp" alt="linkedin-integration" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAA9JREFUeNpjYBgFowA7AAACHAABV3wEvQAAAABJRU5ErkJggg==">
+</div>
+<h5 class="text-center">LinkedIn</h5>
+<p class="text-light text-center" style="padding: 0px 20px;">Connect with contacts, get updates and send messages on the professional social network.</p>
+</div>
+</a>
+
+</div>
+</div>
+
+
+<div class="text-center text-light m-t-xl "><a href="/plugins"><span class="border-b-pink-light features-mob-fix p-b-xs">Explore integrations </span></a></div>
+
+</div>
+
+
+
+
+<div class="clearfix"></div>
+</div>
+
+</div></div>
+
+
+
+document.querySelector("body > div.threereasons.m-t-xl > div > div")

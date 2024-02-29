@@ -58,7 +58,7 @@ def updatetoarchived(request,data):
 
    
    
-        return redirect('nextpage')
+        return redirect('index')
 
 
 def updatetounarchived(request,data):
@@ -74,7 +74,7 @@ def updatetounarchived(request,data):
 
    
    
-        return redirect('nextpage')
+        return redirect('archived')
 
 
 def newdesign(request):
